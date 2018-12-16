@@ -1,0 +1,4002 @@
+[
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-14T00:00:00.000Z",
+    open: 3431.5,
+    close: 3307.5,
+    high: 3439,
+    low: 3305
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-13T00:00:00.000Z",
+    open: 3344,
+    close: 3431.5,
+    high: 3493.5,
+    low: 3321.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-12T00:00:00.000Z",
+    open: 3406,
+    close: 3344,
+    high: 3422,
+    low: 3281.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-11T00:00:00.000Z",
+    open: 3526.5,
+    close: 3406,
+    high: 3596,
+    low: 3350
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-10T00:00:00.000Z",
+    open: 3397,
+    close: 3526.5,
+    high: 3630,
+    low: 3370.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-09T00:00:00.000Z",
+    open: 3369,
+    close: 3397,
+    high: 3500,
+    low: 3246
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-08T00:00:00.000Z",
+    open: 3430.5,
+    close: 3369,
+    high: 3542,
+    low: 3200
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-07T00:00:00.000Z",
+    open: 3695.5,
+    close: 3430.5,
+    high: 3843,
+    low: 3400
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-06T00:00:00.000Z",
+    open: 3902,
+    close: 3695.5,
+    high: 3917,
+    low: 3655
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-05T00:00:00.000Z",
+    open: 3829.5,
+    close: 3902,
+    high: 4042,
+    low: 3730
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-04T00:00:00.000Z",
+    open: 4096.5,
+    close: 3829.5,
+    high: 4118.5,
+    low: 3729.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-03T00:00:00.000Z",
+    open: 4136.5,
+    close: 4096.5,
+    high: 4270,
+    low: 4025
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-02T00:00:00.000Z",
+    open: 3972,
+    close: 4136.5,
+    high: 4266,
+    low: 3903.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-12-01T00:00:00.000Z",
+    open: 4242,
+    close: 3972,
+    high: 4299,
+    low: 3860
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-30T00:00:00.000Z",
+    open: 4219,
+    close: 4242,
+    high: 4423,
+    low: 4085
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-29T00:00:00.000Z",
+    open: 3769,
+    close: 4219,
+    high: 4357,
+    low: 3768.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-28T00:00:00.000Z",
+    open: 3724.5,
+    close: 3769,
+    high: 3837,
+    low: 3563.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-27T00:00:00.000Z",
+    open: 3930.5,
+    close: 3724.5,
+    high: 4080,
+    low: 3492
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-26T00:00:00.000Z",
+    open: 3768.5,
+    close: 3930.5,
+    high: 4120,
+    low: 3430
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-25T00:00:00.000Z",
+    open: 4283,
+    close: 3768.5,
+    high: 4378,
+    low: 3627
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-24T00:00:00.000Z",
+    open: 4266.5,
+    close: 4283,
+    high: 4382,
+    low: 4068
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-23T00:00:00.000Z",
+    open: 4537,
+    close: 4266.5,
+    high: 4598,
+    low: 4235.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-22T00:00:00.000Z",
+    open: 4348.5,
+    close: 4537,
+    high: 4654,
+    low: 4229
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-21T00:00:00.000Z",
+    open: 4743,
+    close: 4348.5,
+    high: 4897,
+    low: 4010
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-20T00:00:00.000Z",
+    open: 5556,
+    close: 4743,
+    high: 5557,
+    low: 4665
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-19T00:00:00.000Z",
+    open: 5501.5,
+    close: 5556,
+    high: 5690,
+    low: 5501.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-18T00:00:00.000Z",
+    open: 5511,
+    close: 5501.5,
+    high: 5557,
+    low: 5450.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-17T00:00:00.000Z",
+    open: 5581,
+    close: 5511,
+    high: 5619,
+    low: 5406
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-16T00:00:00.000Z",
+    open: 5586,
+    close: 5581,
+    high: 5639.5,
+    low: 5181
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-15T00:00:00.000Z",
+    open: 6249,
+    close: 5586,
+    high: 6296,
+    low: 5231
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-14T00:00:00.000Z",
+    open: 6337.5,
+    close: 6249,
+    high: 6338,
+    low: 6235
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-13T00:00:00.000Z",
+    open: 6361,
+    close: 6337.5,
+    high: 6406,
+    low: 6305.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-12T00:00:00.000Z",
+    open: 6353.5,
+    close: 6361,
+    high: 6380,
+    low: 6260
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-11T00:00:00.000Z",
+    open: 6338.5,
+    close: 6353.5,
+    high: 6379,
+    low: 6334.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-10T00:00:00.000Z",
+    open: 6414,
+    close: 6338.5,
+    high: 6420.5,
+    low: 6310
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-09T00:00:00.000Z",
+    open: 6510.5,
+    close: 6414,
+    high: 6524,
+    low: 6372.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-08T00:00:00.000Z",
+    open: 6450.5,
+    close: 6510.5,
+    high: 6568,
+    low: 6434.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-07T00:00:00.000Z",
+    open: 6404,
+    close: 6450.5,
+    high: 6460,
+    low: 6387
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-06T00:00:00.000Z",
+    open: 6427.5,
+    close: 6404,
+    high: 6445.5,
+    low: 6380
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-05T00:00:00.000Z",
+    open: 6332.5,
+    close: 6427.5,
+    high: 6471,
+    low: 6322.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-04T00:00:00.000Z",
+    open: 6346,
+    close: 6332.5,
+    high: 6348.5,
+    low: 6316.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-03T00:00:00.000Z",
+    open: 6337,
+    close: 6346,
+    high: 6387,
+    low: 6328
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-02T00:00:00.000Z",
+    open: 6307,
+    close: 6337,
+    high: 6370,
+    low: 6302
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-11-01T00:00:00.000Z",
+    open: 6272,
+    close: 6307,
+    high: 6345,
+    low: 6210
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-31T00:00:00.000Z",
+    open: 6266.5,
+    close: 6272,
+    high: 6294,
+    low: 6255
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-30T00:00:00.000Z",
+    open: 6408,
+    close: 6266.5,
+    high: 6415.5,
+    low: 6209
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-29T00:00:00.000Z",
+    open: 6407,
+    close: 6408,
+    high: 6449,
+    low: 6382.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-28T00:00:00.000Z",
+    open: 6406.5,
+    close: 6407,
+    high: 6419,
+    low: 6395.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-27T00:00:00.000Z",
+    open: 6393.5,
+    close: 6406.5,
+    high: 6468,
+    low: 6386.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-26T00:00:00.000Z",
+    open: 6412.5,
+    close: 6393.5,
+    high: 6419,
+    low: 6368
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-25T00:00:00.000Z",
+    open: 6395,
+    close: 6412.5,
+    high: 6490,
+    low: 6394.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-24T00:00:00.000Z",
+    open: 6412.5,
+    close: 6395,
+    high: 6415.5,
+    low: 6360
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-23T00:00:00.000Z",
+    open: 6413,
+    close: 6412.5,
+    high: 6426,
+    low: 6369
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-22T00:00:00.000Z",
+    open: 6407.5,
+    close: 6413,
+    high: 6465,
+    low: 6405.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-21T00:00:00.000Z",
+    open: 6384,
+    close: 6407.5,
+    high: 6425,
+    low: 6367
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-20T00:00:00.000Z",
+    open: 6394.5,
+    close: 6384,
+    high: 6405,
+    low: 6366
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-19T00:00:00.000Z",
+    open: 6438.5,
+    close: 6394.5,
+    high: 6488,
+    low: 6350
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-18T00:00:00.000Z",
+    open: 6456,
+    close: 6438.5,
+    high: 6458,
+    low: 6409
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-17T00:00:00.000Z",
+    open: 6436.5,
+    close: 6456,
+    high: 6497.5,
+    low: 6383
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-16T00:00:00.000Z",
+    open: 6181.5,
+    close: 6436.5,
+    high: 6818,
+    low: 6147
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-15T00:00:00.000Z",
+    open: 6193.5,
+    close: 6181.5,
+    high: 6300,
+    low: 6142
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-14T00:00:00.000Z",
+    open: 6182.5,
+    close: 6193.5,
+    high: 6212.5,
+    low: 6166
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-13T00:00:00.000Z",
+    open: 6154.5,
+    close: 6182.5,
+    high: 6233.5,
+    low: 6100
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-12T00:00:00.000Z",
+    open: 6530,
+    close: 6154.5,
+    high: 6530.5,
+    low: 6005
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-11T00:00:00.000Z",
+    open: 6591,
+    close: 6530,
+    high: 6591.5,
+    low: 6452
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-10T00:00:00.000Z",
+    open: 6607.5,
+    close: 6591,
+    high: 6614.5,
+    low: 6563
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-09T00:00:00.000Z",
+    open: 6571,
+    close: 6607.5,
+    high: 6669,
+    low: 6550.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-08T00:00:00.000Z",
+    open: 6552,
+    close: 6571,
+    high: 6599,
+    low: 6488
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-07T00:00:00.000Z",
+    open: 6582,
+    close: 6552,
+    high: 6592.5,
+    low: 6531.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-06T00:00:00.000Z",
+    open: 6553,
+    close: 6582,
+    high: 6658.5,
+    low: 6522
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-05T00:00:00.000Z",
+    open: 6465,
+    close: 6553,
+    high: 6620,
+    low: 6459
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-04T00:00:00.000Z",
+    open: 6502.5,
+    close: 6465,
+    high: 6509.5,
+    low: 6394
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-03T00:00:00.000Z",
+    open: 6571,
+    close: 6502.5,
+    high: 6590,
+    low: 6444.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-02T00:00:00.000Z",
+    open: 6598.5,
+    close: 6571,
+    high: 6636,
+    low: 6466
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-10-01T00:00:00.000Z",
+    open: 6581.5,
+    close: 6598.5,
+    high: 6642.5,
+    low: 6515
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-30T00:00:00.000Z",
+    open: 6620,
+    close: 6581.5,
+    high: 6620.5,
+    low: 6438
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-29T00:00:00.000Z",
+    open: 6685.5,
+    close: 6620,
+    high: 6789,
+    low: 6521
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-28T00:00:00.000Z",
+    open: 6452.5,
+    close: 6685.5,
+    high: 6759,
+    low: 6435
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-27T00:00:00.000Z",
+    open: 6429,
+    close: 6452.5,
+    high: 6540,
+    low: 6377
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-26T00:00:00.000Z",
+    open: 6578.5,
+    close: 6429,
+    high: 6578.5,
+    low: 6311.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-25T00:00:00.000Z",
+    open: 6703,
+    close: 6578.5,
+    high: 6720,
+    low: 6555
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-24T00:00:00.000Z",
+    open: 6709,
+    close: 6703,
+    high: 6779,
+    low: 6653
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-23T00:00:00.000Z",
+    open: 6746.5,
+    close: 6709,
+    high: 6830,
+    low: 6626
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-22T00:00:00.000Z",
+    open: 6482,
+    close: 6746.5,
+    high: 6778,
+    low: 6481.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-21T00:00:00.000Z",
+    open: 6384.5,
+    close: 6482,
+    high: 6520,
+    low: 6336.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-20T00:00:00.000Z",
+    open: 6328.5,
+    close: 6384.5,
+    high: 6580,
+    low: 6066
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-19T00:00:00.000Z",
+    open: 6247,
+    close: 6328.5,
+    high: 6380.5,
+    low: 6226.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-18T00:00:00.000Z",
+    open: 6493,
+    close: 6247,
+    high: 6528.5,
+    low: 6201
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-17T00:00:00.000Z",
+    open: 6515.5,
+    close: 6493,
+    high: 6516.5,
+    low: 6330.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-16T00:00:00.000Z",
+    open: 6478,
+    close: 6515.5,
+    high: 6568,
+    low: 6463.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-15T00:00:00.000Z",
+    open: 6487.5,
+    close: 6478,
+    high: 6585,
+    low: 6350
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-14T00:00:00.000Z",
+    open: 6322,
+    close: 6487.5,
+    high: 6530,
+    low: 6321.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-13T00:00:00.000Z",
+    open: 6278.5,
+    close: 6322,
+    high: 6345.5,
+    low: 6181
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-12T00:00:00.000Z",
+    open: 6300,
+    close: 6278.5,
+    high: 6434.5,
+    low: 6140
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-11T00:00:00.000Z",
+    open: 6240,
+    close: 6300,
+    high: 6385,
+    low: 6223
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-10T00:00:00.000Z",
+    open: 6180.5,
+    close: 6240,
+    high: 6483.5,
+    low: 6140
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-09T00:00:00.000Z",
+    open: 6398,
+    close: 6180.5,
+    high: 6468,
+    low: 6100
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-08T00:00:00.000Z",
+    open: 6487,
+    close: 6398,
+    high: 6523,
+    low: 6323.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-07T00:00:00.000Z",
+    open: 6689,
+    close: 6487,
+    high: 6709,
+    low: 6181
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-06T00:00:00.000Z",
+    open: 7355,
+    close: 6689,
+    high: 7387,
+    low: 6633.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-05T00:00:00.000Z",
+    open: 7259.5,
+    close: 7355,
+    high: 7440,
+    low: 7235.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-04T00:00:00.000Z",
+    open: 7295,
+    close: 7259.5,
+    high: 7349.5,
+    low: 7180
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-03T00:00:00.000Z",
+    open: 7196.5,
+    close: 7295,
+    high: 7350,
+    low: 7138
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-02T00:00:00.000Z",
+    open: 7017,
+    close: 7196.5,
+    high: 7298,
+    low: 7016
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-09-01T00:00:00.000Z",
+    open: 6977,
+    close: 7017,
+    high: 7087,
+    low: 6880
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-31T00:00:00.000Z",
+    open: 7032.5,
+    close: 6977,
+    high: 7055.5,
+    low: 6782.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-30T00:00:00.000Z",
+    open: 7076.5,
+    close: 7032.5,
+    high: 7120,
+    low: 6870
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-29T00:00:00.000Z",
+    open: 6906,
+    close: 7076.5,
+    high: 7133,
+    low: 6862
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-28T00:00:00.000Z",
+    open: 6701.5,
+    close: 6906,
+    high: 6973,
+    low: 6645.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-27T00:00:00.000Z",
+    open: 6727.5,
+    close: 6701.5,
+    high: 6779.5,
+    low: 6570.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-26T00:00:00.000Z",
+    open: 6685.5,
+    close: 6727.5,
+    high: 6797.5,
+    low: 6665.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-25T00:00:00.000Z",
+    open: 6521,
+    close: 6685.5,
+    high: 6736,
+    low: 6435
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-24T00:00:00.000Z",
+    open: 6352,
+    close: 6521,
+    high: 6578,
+    low: 6339
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-23T00:00:00.000Z",
+    open: 6467,
+    close: 6352,
+    high: 7148,
+    low: 6231.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-22T00:00:00.000Z",
+    open: 6253.5,
+    close: 6467,
+    high: 6503,
+    low: 6231.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-21T00:00:00.000Z",
+    open: 6487,
+    close: 6253.5,
+    high: 6523,
+    low: 6210
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-20T00:00:00.000Z",
+    open: 6394,
+    close: 6487,
+    high: 6562,
+    low: 6305.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-19T00:00:00.000Z",
+    open: 6578.5,
+    close: 6394,
+    high: 6617,
+    low: 6280
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-18T00:00:00.000Z",
+    open: 6305.5,
+    close: 6578.5,
+    high: 6589,
+    low: 6285
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-17T00:00:00.000Z",
+    open: 6266.5,
+    close: 6305.5,
+    high: 6483,
+    low: 6206
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-16T00:00:00.000Z",
+    open: 6193.5,
+    close: 6266.5,
+    high: 6641,
+    low: 6182
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-15T00:00:00.000Z",
+    open: 6245.5,
+    close: 6193.5,
+    high: 6250,
+    low: 5860
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-14T00:00:00.000Z",
+    open: 6308.5,
+    close: 6245.5,
+    high: 6550,
+    low: 6134
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-13T00:00:00.000Z",
+    open: 6241,
+    close: 6308.5,
+    high: 6499,
+    low: 6166
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-12T00:00:00.000Z",
+    open: 6138,
+    close: 6241,
+    high: 6503,
+    low: 5970
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-11T00:00:00.000Z",
+    open: 6536,
+    close: 6138,
+    high: 6578.5,
+    low: 5971
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-10T00:00:00.000Z",
+    open: 6274,
+    close: 6536,
+    high: 6640,
+    low: 6182
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-09T00:00:00.000Z",
+    open: 6711.5,
+    close: 6274,
+    high: 6712,
+    low: 6100
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-08T00:00:00.000Z",
+    open: 6931.5,
+    close: 6711.5,
+    high: 7144,
+    low: 6646
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-07T00:00:00.000Z",
+    open: 7019.5,
+    close: 6931.5,
+    high: 7180,
+    low: 6835
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-06T00:00:00.000Z",
+    open: 7005.5,
+    close: 7019.5,
+    high: 7094,
+    low: 6870.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-05T00:00:00.000Z",
+    open: 7411,
+    close: 7005.5,
+    high: 7487,
+    low: 6881
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-04T00:00:00.000Z",
+    open: 7539.5,
+    close: 7411,
+    high: 7540,
+    low: 7292.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-03T00:00:00.000Z",
+    open: 7604.5,
+    close: 7539.5,
+    high: 7717.5,
+    low: 7455.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-02T00:00:00.000Z",
+    open: 7727,
+    close: 7604.5,
+    high: 7757.5,
+    low: 7430
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-08-01T00:00:00.000Z",
+    open: 8174.5,
+    close: 7727,
+    high: 8174.5,
+    low: 7625
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-31T00:00:00.000Z",
+    open: 8219,
+    close: 8174.5,
+    high: 8281.5,
+    low: 7842
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-30T00:00:00.000Z",
+    open: 8229.5,
+    close: 8219,
+    high: 8302.5,
+    low: 8122
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-29T00:00:00.000Z",
+    open: 8190,
+    close: 8229.5,
+    high: 8249.5,
+    low: 8075
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-28T00:00:00.000Z",
+    open: 7922,
+    close: 8190,
+    high: 8280,
+    low: 7791
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-27T00:00:00.000Z",
+    open: 8177,
+    close: 7922,
+    high: 8319.5,
+    low: 7850
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-26T00:00:00.000Z",
+    open: 8391,
+    close: 8177,
+    high: 8487,
+    low: 8056
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-25T00:00:00.000Z",
+    open: 7720,
+    close: 8391,
+    high: 8478,
+    low: 7694.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-24T00:00:00.000Z",
+    open: 7391.5,
+    close: 7720,
+    high: 7799,
+    low: 7376
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-23T00:00:00.000Z",
+    open: 7401,
+    close: 7391.5,
+    high: 7590,
+    low: 7321
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-22T00:00:00.000Z",
+    open: 7333,
+    close: 7401,
+    high: 7450,
+    low: 7209.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-21T00:00:00.000Z",
+    open: 7466.5,
+    close: 7333,
+    high: 7715,
+    low: 7270.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-20T00:00:00.000Z",
+    open: 7384,
+    close: 7466.5,
+    high: 7584,
+    low: 7284
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-19T00:00:00.000Z",
+    open: 7318.5,
+    close: 7384,
+    high: 7600,
+    low: 7230
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-18T00:00:00.000Z",
+    open: 6719.5,
+    close: 7318.5,
+    high: 7470,
+    low: 6659.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-17T00:00:00.000Z",
+    open: 6347.5,
+    close: 6719.5,
+    high: 6738,
+    low: 6338
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-16T00:00:00.000Z",
+    open: 6245.5,
+    close: 6347.5,
+    high: 6392,
+    low: 6231
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-15T00:00:00.000Z",
+    open: 6213,
+    close: 6245.5,
+    high: 6320,
+    low: 6181.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-14T00:00:00.000Z",
+    open: 6246.5,
+    close: 6213,
+    high: 6350,
+    low: 6111
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-13T00:00:00.000Z",
+    open: 6371,
+    close: 6246.5,
+    high: 6371,
+    low: 6065
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-12T00:00:00.000Z",
+    open: 6304,
+    close: 6371,
+    high: 6399.5,
+    low: 6277
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-11T00:00:00.000Z",
+    open: 6668,
+    close: 6304,
+    high: 6678,
+    low: 6260
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-10T00:00:00.000Z",
+    open: 6701,
+    close: 6668,
+    high: 6841,
+    low: 6626
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-09T00:00:00.000Z",
+    open: 6756.5,
+    close: 6701,
+    high: 6774.5,
+    low: 6670
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-08T00:00:00.000Z",
+    open: 6599.5,
+    close: 6756.5,
+    high: 6868,
+    low: 6503
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-07T00:00:00.000Z",
+    open: 6526.5,
+    close: 6599.5,
+    high: 6650,
+    low: 6453
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-06T00:00:00.000Z",
+    open: 6582,
+    close: 6526.5,
+    high: 6730,
+    low: 6429
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-05T00:00:00.000Z",
+    open: 6505.5,
+    close: 6582,
+    high: 6820,
+    low: 6412
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-04T00:00:00.000Z",
+    open: 6610,
+    close: 6505.5,
+    high: 6670,
+    low: 6463.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-03T00:00:00.000Z",
+    open: 6346,
+    close: 6610,
+    high: 6675,
+    low: 6268
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-02T00:00:00.000Z",
+    open: 6383.5,
+    close: 6346,
+    high: 6432,
+    low: 6255
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-07-01T00:00:00.000Z",
+    open: 6205.5,
+    close: 6383.5,
+    high: 6570,
+    low: 6190
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-30T00:00:00.000Z",
+    open: 5844.5,
+    close: 6205.5,
+    high: 6333,
+    low: 5778
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-29T00:00:00.000Z",
+    open: 6129,
+    close: 5844.5,
+    high: 6154.5,
+    low: 5820
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-28T00:00:00.000Z",
+    open: 6074,
+    close: 6129,
+    high: 6178,
+    low: 5980
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-27T00:00:00.000Z",
+    open: 6251.5,
+    close: 6074,
+    high: 6280.5,
+    low: 6044
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-26T00:00:00.000Z",
+    open: 6150,
+    close: 6251.5,
+    high: 6350,
+    low: 6061
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-25T00:00:00.000Z",
+    open: 6165,
+    close: 6150,
+    high: 6347,
+    low: 5743
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-24T00:00:00.000Z",
+    open: 6048.5,
+    close: 6165,
+    high: 6270.5,
+    low: 6033.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-23T00:00:00.000Z",
+    open: 6710.5,
+    close: 6048.5,
+    high: 6728,
+    low: 5900.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-22T00:00:00.000Z",
+    open: 6750,
+    close: 6710.5,
+    high: 6789,
+    low: 6671
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-21T00:00:00.000Z",
+    open: 6731.5,
+    close: 6750,
+    high: 6823,
+    low: 6552.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-20T00:00:00.000Z",
+    open: 6706.5,
+    close: 6731.5,
+    high: 6838,
+    low: 6651
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-19T00:00:00.000Z",
+    open: 6443,
+    close: 6706.5,
+    high: 6800,
+    low: 6374.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-18T00:00:00.000Z",
+    open: 6488.5,
+    close: 6443,
+    high: 6580.5,
+    low: 6425
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-17T00:00:00.000Z",
+    open: 6395,
+    close: 6488.5,
+    high: 6600.5,
+    low: 6312
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-16T00:00:00.000Z",
+    open: 6631,
+    close: 6395,
+    high: 6680,
+    low: 6355
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-15T00:00:00.000Z",
+    open: 6296.5,
+    close: 6631,
+    high: 6718,
+    low: 6268
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-14T00:00:00.000Z",
+    open: 6553.5,
+    close: 6296.5,
+    high: 6633,
+    low: 6097
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-13T00:00:00.000Z",
+    open: 6870.5,
+    close: 6553.5,
+    high: 6871,
+    low: 6433
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-12T00:00:00.000Z",
+    open: 6767,
+    close: 6870.5,
+    high: 6937.5,
+    low: 6620
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-11T00:00:00.000Z",
+    open: 7492,
+    close: 6767,
+    high: 7492.5,
+    low: 6610
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-10T00:00:00.000Z",
+    open: 7625,
+    close: 7492,
+    high: 7700,
+    low: 7436
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-09T00:00:00.000Z",
+    open: 7689,
+    close: 7625,
+    high: 7696.5,
+    low: 7540
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-08T00:00:00.000Z",
+    open: 7657,
+    close: 7689,
+    high: 7755,
+    low: 7630
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-07T00:00:00.000Z",
+    open: 7622.5,
+    close: 7657,
+    high: 7700,
+    low: 7478
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-06T00:00:00.000Z",
+    open: 7492,
+    close: 7622.5,
+    high: 7670,
+    low: 7344
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-05T00:00:00.000Z",
+    open: 7709,
+    close: 7492,
+    high: 7760,
+    low: 7451.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-04T00:00:00.000Z",
+    open: 7631,
+    close: 7709,
+    high: 7798,
+    low: 7575
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-03T00:00:00.000Z",
+    open: 7513,
+    close: 7631,
+    high: 7727,
+    low: 7444
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-02T00:00:00.000Z",
+    open: 7485.5,
+    close: 7513,
+    high: 7618,
+    low: 7333
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-06-01T00:00:00.000Z",
+    open: 7372,
+    close: 7485.5,
+    high: 7625,
+    low: 7330
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-31T00:00:00.000Z",
+    open: 7469,
+    close: 7372,
+    high: 7559,
+    low: 7272
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-30T00:00:00.000Z",
+    open: 7111,
+    close: 7469,
+    high: 7569,
+    low: 7060
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-29T00:00:00.000Z",
+    open: 7336.5,
+    close: 7111,
+    high: 7450,
+    low: 7080.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-28T00:00:00.000Z",
+    open: 7323,
+    close: 7336.5,
+    high: 7400,
+    low: 7189
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-27T00:00:00.000Z",
+    open: 7464.5,
+    close: 7323,
+    high: 7648,
+    low: 7261.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-26T00:00:00.000Z",
+    open: 7568,
+    close: 7464.5,
+    high: 7664,
+    low: 7320
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-25T00:00:00.000Z",
+    open: 7506,
+    close: 7568,
+    high: 7740,
+    low: 7256
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-24T00:00:00.000Z",
+    open: 7989,
+    close: 7506,
+    high: 8028.5,
+    low: 7430.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-23T00:00:00.000Z",
+    open: 8397,
+    close: 7989,
+    high: 8407,
+    low: 7950
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-22T00:00:00.000Z",
+    open: 8521.5,
+    close: 8397,
+    high: 8594.5,
+    low: 8320
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-21T00:00:00.000Z",
+    open: 8230,
+    close: 8521.5,
+    high: 8610,
+    low: 8174.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-20T00:00:00.000Z",
+    open: 8233,
+    close: 8230,
+    high: 8400,
+    low: 8152
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-19T00:00:00.000Z",
+    open: 8058.5,
+    close: 8233,
+    high: 8273.5,
+    low: 7920
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-18T00:00:00.000Z",
+    open: 8334.5,
+    close: 8058.5,
+    high: 8481,
+    low: 7945
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-17T00:00:00.000Z",
+    open: 8476.5,
+    close: 8334.5,
+    high: 8497,
+    low: 8080
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-16T00:00:00.000Z",
+    open: 8678,
+    close: 8476.5,
+    high: 8849,
+    low: 8417.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-15T00:00:00.000Z",
+    open: 8693.5,
+    close: 8678,
+    high: 8882.5,
+    low: 8282.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-14T00:00:00.000Z",
+    open: 8477,
+    close: 8693.5,
+    high: 8758,
+    low: 8336
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-13T00:00:00.000Z",
+    open: 8413,
+    close: 8477,
+    high: 8634.5,
+    low: 8225
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-12T00:00:00.000Z",
+    open: 9027.5,
+    close: 8413,
+    high: 9027.5,
+    low: 8337
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-11T00:00:00.000Z",
+    open: 9305.5,
+    close: 9027.5,
+    high: 9399,
+    low: 9001
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-10T00:00:00.000Z",
+    open: 9190.5,
+    close: 9305.5,
+    high: 9345,
+    low: 8966
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-09T00:00:00.000Z",
+    open: 9359.5,
+    close: 9190.5,
+    high: 9449,
+    low: 9002
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-08T00:00:00.000Z",
+    open: 9600.5,
+    close: 9359.5,
+    high: 9618,
+    low: 9170
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-07T00:00:00.000Z",
+    open: 9828.5,
+    close: 9600.5,
+    high: 9936,
+    low: 9416
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-06T00:00:00.000Z",
+    open: 9683,
+    close: 9828.5,
+    high: 9970,
+    low: 9671.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-05T00:00:00.000Z",
+    open: 9741.5,
+    close: 9683,
+    high: 9778,
+    low: 9351
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-04T00:00:00.000Z",
+    open: 9216,
+    close: 9741.5,
+    high: 9852,
+    low: 9167.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-03T00:00:00.000Z",
+    open: 9066,
+    close: 9216,
+    high: 9258,
+    low: 8974.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-02T00:00:00.000Z",
+    open: 9250,
+    close: 9066,
+    high: 9253.5,
+    low: 8800.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-05-01T00:00:00.000Z",
+    open: 9400.5,
+    close: 9250,
+    high: 9457,
+    low: 9123
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-30T00:00:00.000Z",
+    open: 9343.5,
+    close: 9400.5,
+    high: 9540,
+    low: 9192
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-29T00:00:00.000Z",
+    open: 8928,
+    close: 9343.5,
+    high: 9450,
+    low: 8852
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-28T00:00:00.000Z",
+    open: 9288,
+    close: 8928,
+    high: 9384.5,
+    low: 8910
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-27T00:00:00.000Z",
+    open: 8846.5,
+    close: 9288,
+    high: 9327,
+    low: 8611
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-26T00:00:00.000Z",
+    open: 9675,
+    close: 8846.5,
+    high: 9765.5,
+    low: 8711
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-25T00:00:00.000Z",
+    open: 8943,
+    close: 9675,
+    high: 9780,
+    low: 8939.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-24T00:00:00.000Z",
+    open: 8800,
+    close: 8943,
+    high: 9005,
+    low: 8780
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-23T00:00:00.000Z",
+    open: 8923.5,
+    close: 8800,
+    high: 9020,
+    low: 8739
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-22T00:00:00.000Z",
+    open: 8847,
+    close: 8923.5,
+    high: 9050.5,
+    low: 8651
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-21T00:00:00.000Z",
+    open: 8266,
+    close: 8847,
+    high: 8974,
+    low: 8215
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-20T00:00:00.000Z",
+    open: 8177,
+    close: 8266,
+    high: 8300,
+    low: 8068.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-19T00:00:00.000Z",
+    open: 7889.5,
+    close: 8177,
+    high: 8262,
+    low: 7857
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-18T00:00:00.000Z",
+    open: 8047,
+    close: 7889.5,
+    high: 8179,
+    low: 7800.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-17T00:00:00.000Z",
+    open: 8346.5,
+    close: 8047,
+    high: 8420,
+    low: 7910
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-16T00:00:00.000Z",
+    open: 8000,
+    close: 8346.5,
+    high: 8428.5,
+    low: 8000
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-15T00:00:00.000Z",
+    open: 7887.5,
+    close: 8000,
+    high: 8195,
+    low: 7835
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-14T00:00:00.000Z",
+    open: 7904.5,
+    close: 7887.5,
+    high: 8227,
+    low: 7754
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-13T00:00:00.000Z",
+    open: 6933.5,
+    close: 7904.5,
+    high: 8149,
+    low: 6688
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-12T00:00:00.000Z",
+    open: 6824,
+    close: 6933.5,
+    high: 6959,
+    low: 6802
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-11T00:00:00.000Z",
+    open: 6763,
+    close: 6824,
+    high: 6888,
+    low: 6620
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-10T00:00:00.000Z",
+    open: 7014,
+    close: 6763,
+    high: 7177.5,
+    low: 6600
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-09T00:00:00.000Z",
+    open: 6900.5,
+    close: 7014,
+    high: 7137,
+    low: 6885
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-08T00:00:00.000Z",
+    open: 6612,
+    close: 6900.5,
+    high: 7058.5,
+    low: 6608
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-07T00:00:00.000Z",
+    open: 6769.5,
+    close: 6612,
+    high: 6875,
+    low: 6479.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-06T00:00:00.000Z",
+    open: 6779,
+    close: 6769.5,
+    high: 6935,
+    low: 6555
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-05T00:00:00.000Z",
+    open: 7408.5,
+    close: 6779,
+    high: 7420,
+    low: 6686.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-04T00:00:00.000Z",
+    open: 7046.5,
+    close: 7408.5,
+    high: 7518,
+    low: 7006.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-03T00:00:00.000Z",
+    open: 6817,
+    close: 7046.5,
+    high: 7123,
+    low: 6766
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-02T00:00:00.000Z",
+    open: 6920.5,
+    close: 6817,
+    high: 7053,
+    low: 6404.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-04-01T00:00:00.000Z",
+    open: 6820,
+    close: 6920.5,
+    high: 7222,
+    low: 6788
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-31T00:00:00.000Z",
+    open: 7082,
+    close: 6820,
+    high: 7227,
+    low: 6543
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-30T00:00:00.000Z",
+    open: 7935,
+    close: 7082,
+    high: 7963.5,
+    low: 6850
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-29T00:00:00.000Z",
+    open: 7791,
+    close: 7935,
+    high: 8097,
+    low: 7727.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-28T00:00:00.000Z",
+    open: 8150,
+    close: 7791,
+    high: 8199,
+    low: 7716
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-27T00:00:00.000Z",
+    open: 8444.5,
+    close: 8150,
+    high: 8493.5,
+    low: 7820
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-26T00:00:00.000Z",
+    open: 8512,
+    close: 8444.5,
+    high: 8683,
+    low: 8360
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-25T00:00:00.000Z",
+    open: 8921,
+    close: 8512,
+    high: 9032.5,
+    low: 8460.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-24T00:00:00.000Z",
+    open: 8700,
+    close: 8921,
+    high: 8948,
+    low: 8255
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-23T00:00:00.000Z",
+    open: 8893.5,
+    close: 8700,
+    high: 9095,
+    low: 8505
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-22T00:00:00.000Z",
+    open: 8897,
+    close: 8893.5,
+    high: 9217.5,
+    low: 8750
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-21T00:00:00.000Z",
+    open: 8590,
+    close: 8897,
+    high: 9064,
+    low: 8323.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-20T00:00:00.000Z",
+    open: 8189,
+    close: 8590,
+    high: 8780,
+    low: 8126
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-19T00:00:00.000Z",
+    open: 7849,
+    close: 8189,
+    high: 8370,
+    low: 7300
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-18T00:00:00.000Z",
+    open: 8250.5,
+    close: 7849,
+    high: 8389,
+    low: 7730.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-17T00:00:00.000Z",
+    open: 8250.5,
+    close: 8250.5,
+    high: 8643,
+    low: 7873
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-16T00:00:00.000Z",
+    open: 8190.5,
+    close: 8250.5,
+    high: 8475,
+    low: 7652.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-15T00:00:00.000Z",
+    open: 9133.5,
+    close: 8190.5,
+    high: 9400,
+    low: 7933.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-14T00:00:00.000Z",
+    open: 9093,
+    close: 9133.5,
+    high: 9519,
+    low: 8805.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-13T00:00:00.000Z",
+    open: 9543,
+    close: 9093,
+    high: 9900,
+    low: 8711
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-12T00:00:00.000Z",
+    open: 8789.5,
+    close: 9543,
+    high: 9789,
+    low: 8400
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-11T00:00:00.000Z",
+    open: 9224,
+    close: 8789.5,
+    high: 9500,
+    low: 8706
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-10T00:00:00.000Z",
+    open: 9304.5,
+    close: 9224,
+    high: 9423.5,
+    low: 8340
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-09T00:00:00.000Z",
+    open: 9913.5,
+    close: 9304.5,
+    high: 10121.5,
+    low: 9030
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-08T00:00:00.000Z",
+    open: 10730,
+    close: 9913.5,
+    high: 10898,
+    low: 9330.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-07T00:00:00.000Z",
+    open: 11330.5,
+    close: 10730,
+    high: 11391.5,
+    low: 10560
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-06T00:00:00.000Z",
+    open: 11490.5,
+    close: 11330.5,
+    high: 11683,
+    low: 11330.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-05T00:00:00.000Z",
+    open: 11458,
+    close: 11490.5,
+    high: 11538,
+    low: 11066
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-04T00:00:00.000Z",
+    open: 11030,
+    close: 11458,
+    high: 11524.5,
+    low: 11022
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-03T00:00:00.000Z",
+    open: 10919.5,
+    close: 11030,
+    high: 11198,
+    low: 10770
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-02T00:00:00.000Z",
+    open: 10319,
+    close: 10919.5,
+    high: 11105,
+    low: 10230
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-03-01T00:00:00.000Z",
+    open: 10530,
+    close: 10319,
+    high: 11070,
+    low: 10250
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-28T00:00:00.000Z",
+    open: 10316.5,
+    close: 10530,
+    high: 10879.5,
+    low: 10150.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-27T00:00:00.000Z",
+    open: 9591,
+    close: 10316.5,
+    high: 10450,
+    low: 9379.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-26T00:00:00.000Z",
+    open: 9689,
+    close: 9591,
+    high: 9880,
+    low: 9289
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-25T00:00:00.000Z",
+    open: 10130.5,
+    close: 9689,
+    high: 10523,
+    low: 9338.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-24T00:00:00.000Z",
+    open: 9831.5,
+    close: 10130.5,
+    high: 10369,
+    low: 9581
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-23T00:00:00.000Z",
+    open: 10455,
+    close: 9831.5,
+    high: 10905,
+    low: 9726
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-22T00:00:00.000Z",
+    open: 11220,
+    close: 10455,
+    high: 11250,
+    low: 10251
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-21T00:00:00.000Z",
+    open: 11173,
+    close: 11220,
+    high: 11771,
+    low: 11020
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-20T00:00:00.000Z",
+    open: 10402,
+    close: 11173,
+    high: 11277,
+    low: 10300
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-19T00:00:00.000Z",
+    open: 11144,
+    close: 10402,
+    high: 11292,
+    low: 10174
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-18T00:00:00.000Z",
+    open: 10185.5,
+    close: 11144,
+    high: 11160,
+    low: 10013.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-17T00:00:00.000Z",
+    open: 10008,
+    close: 10185.5,
+    high: 10304,
+    low: 9705
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-16T00:00:00.000Z",
+    open: 9462.5,
+    close: 10008,
+    high: 10191,
+    low: 9336
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-15T00:00:00.000Z",
+    open: 8499.5,
+    close: 9462.5,
+    high: 9515,
+    low: 8499.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-14T00:00:00.000Z",
+    open: 8905.5,
+    close: 8499.5,
+    high: 8944,
+    low: 8331
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-13T00:00:00.000Z",
+    open: 8065,
+    close: 8905.5,
+    high: 8999,
+    low: 8063
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-12T00:00:00.000Z",
+    open: 8548.5,
+    close: 8065,
+    high: 8548.5,
+    low: 7830
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-11T00:00:00.000Z",
+    open: 8675.5,
+    close: 8548.5,
+    high: 9084,
+    low: 8112
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-10T00:00:00.000Z",
+    open: 8232.5,
+    close: 8675.5,
+    high: 8750,
+    low: 7692
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-09T00:00:00.000Z",
+    open: 7598.5,
+    close: 8232.5,
+    high: 8655,
+    low: 7576
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-08T00:00:00.000Z",
+    open: 7674.5,
+    close: 7598.5,
+    high: 8590,
+    low: 7189.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-07T00:00:00.000Z",
+    open: 6889.5,
+    close: 7674.5,
+    high: 7930,
+    low: 5855
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-06T00:00:00.000Z",
+    open: 8151,
+    close: 6889.5,
+    high: 8344.5,
+    low: 6543
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-05T00:00:00.000Z",
+    open: 9226.5,
+    close: 8151,
+    high: 9395,
+    low: 7791
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-04T00:00:00.000Z",
+    open: 8807.5,
+    close: 9226.5,
+    high: 9499,
+    low: 8105
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-03T00:00:00.000Z",
+    open: 9008,
+    close: 8807.5,
+    high: 9054.5,
+    low: 7610
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-02T00:00:00.000Z",
+    open: 10132,
+    close: 9008,
+    high: 10199,
+    low: 8476
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-02-01T00:00:00.000Z",
+    open: 9999,
+    close: 10132,
+    high: 10332.5,
+    low: 9500
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-31T00:00:00.000Z",
+    open: 11127,
+    close: 9999,
+    high: 11217.5,
+    low: 9616.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-30T00:00:00.000Z",
+    open: 11631.5,
+    close: 11127,
+    high: 11768,
+    low: 10865
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-29T00:00:00.000Z",
+    open: 11398,
+    close: 11631.5,
+    high: 11970,
+    low: 11350
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-28T00:00:00.000Z",
+    open: 11110,
+    close: 11398,
+    high: 11631,
+    low: 10777.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-27T00:00:00.000Z",
+    open: 11117,
+    close: 11110,
+    high: 11653,
+    low: 10230
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-26T00:00:00.000Z",
+    open: 11394.5,
+    close: 11117,
+    high: 11750,
+    low: 10840.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-25T00:00:00.000Z",
+    open: 10830,
+    close: 11394.5,
+    high: 11499,
+    low: 10437
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-24T00:00:00.000Z",
+    open: 10792.5,
+    close: 10830,
+    high: 11437,
+    low: 9874
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-23T00:00:00.000Z",
+    open: 11560,
+    close: 10792.5,
+    high: 11855,
+    low: 10020
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-22T00:00:00.000Z",
+    open: 12746.5,
+    close: 11560,
+    high: 12757,
+    low: 11088.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-21T00:00:00.000Z",
+    open: 11546.5,
+    close: 12746.5,
+    high: 13008,
+    low: 11490
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-20T00:00:00.000Z",
+    open: 11252,
+    close: 11546.5,
+    high: 12078,
+    low: 10956.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-19T00:00:00.000Z",
+    open: 11210,
+    close: 11252,
+    high: 12183,
+    low: 10615.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-18T00:00:00.000Z",
+    open: 11330,
+    close: 11210,
+    high: 11799,
+    low: 9209
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-17T00:00:00.000Z",
+    open: 13621,
+    close: 11330,
+    high: 13619,
+    low: 10100
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-16T00:00:00.000Z",
+    open: 13645,
+    close: 13621,
+    high: 14374.5,
+    low: 13400
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-15T00:00:00.000Z",
+    open: 14209,
+    close: 13645,
+    high: 14364,
+    low: 13049
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-14T00:00:00.000Z",
+    open: 13874.5,
+    close: 14209,
+    high: 14600,
+    low: 13810
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-13T00:00:00.000Z",
+    open: 13287.5,
+    close: 13874.5,
+    high: 14197,
+    low: 12818.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-12T00:00:00.000Z",
+    open: 14963.5,
+    close: 13287.5,
+    high: 15033.5,
+    low: 12703.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-11T00:00:00.000Z",
+    open: 14465,
+    close: 14963.5,
+    high: 15012.5,
+    low: 13426
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-10T00:00:00.000Z",
+    open: 14952.5,
+    close: 14465,
+    high: 15375,
+    low: 14183
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-09T00:00:00.000Z",
+    open: 16224.5,
+    close: 14952.5,
+    high: 16329,
+    low: 13800
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-08T00:00:00.000Z",
+    open: 17210,
+    close: 16224.5,
+    high: 17213,
+    low: 15770.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-07T00:00:00.000Z",
+    open: 16891,
+    close: 17210,
+    high: 17422,
+    low: 16235
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-06T00:00:00.000Z",
+    open: 15186,
+    close: 16891,
+    high: 17088,
+    low: 14805
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-05T00:00:00.000Z",
+    open: 15157,
+    close: 15186,
+    high: 15500,
+    low: 14150
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-04T00:00:00.000Z",
+    open: 14786.5,
+    close: 15157,
+    high: 15524,
+    low: 14555
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-03T00:00:00.000Z",
+    open: 13477,
+    close: 14786.5,
+    high: 15269,
+    low: 12900
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-02T00:00:00.000Z",
+    open: 13873,
+    close: 13477,
+    high: 14011.5,
+    low: 12772
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2018-01-01T00:00:00.000Z",
+    open: 12673.5,
+    close: 13873,
+    high: 14350,
+    low: 12468.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-31T00:00:00.000Z",
+    open: 14539.5,
+    close: 12673.5,
+    high: 14601.5,
+    low: 11973
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-30T00:00:00.000Z",
+    open: 14480,
+    close: 14539.5,
+    high: 15175,
+    low: 13905
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-29T00:00:00.000Z",
+    open: 15380.5,
+    close: 14480,
+    high: 15535.5,
+    low: 13450.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-28T00:00:00.000Z",
+    open: 15833.5,
+    close: 15380.5,
+    high: 16700,
+    low: 14497.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-27T00:00:00.000Z",
+    open: 13989.5,
+    close: 15833.5,
+    high: 16384.5,
+    low: 13900
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-26T00:00:00.000Z",
+    open: 14227.5,
+    close: 13989.5,
+    high: 14710.5,
+    low: 13232
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-25T00:00:00.000Z",
+    open: 14719.5,
+    close: 14227.5,
+    high: 14788.5,
+    low: 12521.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-24T00:00:00.000Z",
+    open: 13763.5,
+    close: 14719.5,
+    high: 15928,
+    low: 13462
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-23T00:00:00.000Z",
+    open: 15775,
+    close: 13763.5,
+    high: 15905,
+    low: 10900
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-22T00:00:00.000Z",
+    open: 16463,
+    close: 15775,
+    high: 17468.5,
+    low: 15050
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-21T00:00:00.000Z",
+    open: 17663,
+    close: 16463,
+    high: 17943.5,
+    low: 15080
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-20T00:00:00.000Z",
+    open: 19127,
+    close: 17663,
+    high: 19346,
+    low: 16804.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-19T00:00:00.000Z",
+    open: 19287.5,
+    close: 19127,
+    high: 19384,
+    low: 18032.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-18T00:00:00.000Z",
+    open: 19547.5,
+    close: 19287.5,
+    high: 20093,
+    low: 18737.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-17T00:00:00.000Z",
+    open: 17700,
+    close: 19547.5,
+    high: 19840,
+    low: 17476.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-16T00:00:00.000Z",
+    open: 16651,
+    close: 17700,
+    high: 18296.5,
+    low: 16615.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-15T00:00:00.000Z",
+    open: 16436.5,
+    close: 16651,
+    high: 17145,
+    low: 16103
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-14T00:00:00.000Z",
+    open: 17236,
+    close: 16436.5,
+    high: 17561,
+    low: 15855
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-13T00:00:00.000Z",
+    open: 17009,
+    close: 17236,
+    high: 18067,
+    low: 16200
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-12T00:00:00.000Z",
+    open: 15143,
+    close: 17009,
+    high: 17742.5,
+    low: 15102
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-11T00:00:00.000Z",
+    open: 14984.5,
+    close: 15143,
+    high: 16149,
+    low: 13218
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-10T00:00:00.000Z",
+    open: 16272,
+    close: 14984.5,
+    high: 16600,
+    low: 13225
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-09T00:00:00.000Z",
+    open: 17427,
+    close: 16272,
+    high: 17719.5,
+    low: 13889.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-08T00:00:00.000Z",
+    open: 13682,
+    close: 17427,
+    high: 17750,
+    low: 13323.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-07T00:00:00.000Z",
+    open: 11726,
+    close: 13682,
+    high: 13890.5,
+    low: 11724
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-06T00:00:00.000Z",
+    open: 11682,
+    close: 11726,
+    high: 11961,
+    low: 11451
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-05T00:00:00.000Z",
+    open: 11210,
+    close: 11682,
+    high: 11685.5,
+    low: 10856
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-04T00:00:00.000Z",
+    open: 10910.5,
+    close: 11210,
+    high: 11896,
+    low: 10402
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-03T00:00:00.000Z",
+    open: 10879.5,
+    close: 10910.5,
+    high: 11262.5,
+    low: 10676.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-02T00:00:00.000Z",
+    open: 9960,
+    close: 10879.5,
+    high: 10988,
+    low: 9347.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-12-01T00:00:00.000Z",
+    open: 9869.5,
+    close: 9960,
+    high: 10750.5,
+    low: 8938.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-30T00:00:00.000Z",
+    open: 9938,
+    close: 9869.5,
+    high: 11489,
+    low: 8830
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-29T00:00:00.000Z",
+    open: 9751.5,
+    close: 9938,
+    high: 9992.5,
+    low: 9607.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-28T00:00:00.000Z",
+    open: 9339,
+    close: 9751.5,
+    high: 9796,
+    low: 9339
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-27T00:00:00.000Z",
+    open: 8760,
+    close: 9339,
+    high: 9586,
+    low: 8734.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-26T00:00:00.000Z",
+    open: 8207.5,
+    close: 8760,
+    high: 8787,
+    low: 8140
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-25T00:00:00.000Z",
+    open: 7988.5,
+    close: 8207.5,
+    high: 8386.5,
+    low: 7832
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-24T00:00:00.000Z",
+    open: 8219,
+    close: 7988.5,
+    high: 8275.5,
+    low: 7975.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-23T00:00:00.000Z",
+    open: 8098.5,
+    close: 8219,
+    high: 8319,
+    low: 8050.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-22T00:00:00.000Z",
+    open: 8243,
+    close: 8098.5,
+    high: 8393.5,
+    low: 7407.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-21T00:00:00.000Z",
+    open: 8062,
+    close: 8243,
+    high: 8305,
+    low: 7929.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-20T00:00:00.000Z",
+    open: 7805.5,
+    close: 8062,
+    high: 8152.5,
+    low: 7680
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-19T00:00:00.000Z",
+    open: 7674,
+    close: 7805.5,
+    high: 7893.5,
+    low: 7425
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-18T00:00:00.000Z",
+    open: 7867,
+    close: 7674,
+    high: 8059,
+    low: 7550
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-17T00:00:00.000Z",
+    open: 7310.5,
+    close: 7867,
+    high: 8061,
+    low: 7131
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-16T00:00:00.000Z",
+    open: 6632.5,
+    close: 7310.5,
+    high: 7367,
+    low: 6624.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-15T00:00:00.000Z",
+    open: 6558,
+    close: 6632.5,
+    high: 6777,
+    low: 6410
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-14T00:00:00.000Z",
+    open: 5846.5,
+    close: 6558,
+    high: 6720,
+    low: 5800.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-13T00:00:00.000Z",
+    open: 6345.5,
+    close: 5846.5,
+    high: 6480,
+    low: 5464
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-12T00:00:00.000Z",
+    open: 6564,
+    close: 6345.5,
+    high: 6818,
+    low: 6220.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-11T00:00:00.000Z",
+    open: 7150.5,
+    close: 6564,
+    high: 7362.5,
+    low: 6431
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-10T00:00:00.000Z",
+    open: 7465,
+    close: 7150.5,
+    high: 7490.2,
+    low: 7030
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-09T00:00:00.000Z",
+    open: 7121.3,
+    close: 7465,
+    high: 7950,
+    low: 7013
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-08T00:00:00.000Z",
+    open: 6960,
+    close: 7121.3,
+    high: 7215.5,
+    low: 6957
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-07T00:00:00.000Z",
+    open: 7378.3,
+    close: 6960,
+    high: 7436,
+    low: 6900
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-06T00:00:00.000Z",
+    open: 7393.9,
+    close: 7378.3,
+    high: 7621.7,
+    low: 7280.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-05T00:00:00.000Z",
+    open: 7146.5,
+    close: 7393.9,
+    high: 7596.1,
+    low: 6983.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-04T00:00:00.000Z",
+    open: 7025.8,
+    close: 7146.5,
+    high: 7495,
+    low: 6920
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-03T00:00:00.000Z",
+    open: 6749.5,
+    close: 7025.8,
+    high: 7437.7,
+    low: 6700.3
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-02T00:00:00.000Z",
+    open: 6440.1,
+    close: 6749.5,
+    high: 6750,
+    low: 6360
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-11-01T00:00:00.000Z",
+    open: 6134.9,
+    close: 6440.1,
+    high: 6489,
+    low: 6088.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-31T00:00:00.000Z",
+    open: 6159.3,
+    close: 6134.9,
+    high: 6221.8,
+    low: 6010.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-30T00:00:00.000Z",
+    open: 5727.1,
+    close: 6159.3,
+    high: 6366,
+    low: 5687.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-29T00:00:00.000Z",
+    open: 5769.3,
+    close: 5727.1,
+    high: 5878,
+    low: 5652.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-28T00:00:00.000Z",
+    open: 5888.4,
+    close: 5769.3,
+    high: 6013,
+    low: 5678
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-27T00:00:00.000Z",
+    open: 5732,
+    close: 5888.4,
+    high: 6008,
+    low: 5669.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-26T00:00:00.000Z",
+    open: 5517.4,
+    close: 5732,
+    high: 5758.9,
+    low: 5366
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-25T00:00:00.000Z",
+    open: 5853.9,
+    close: 5517.4,
+    high: 5853.9,
+    low: 5454
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-24T00:00:00.000Z",
+    open: 5986,
+    close: 5853.9,
+    high: 6095.2,
+    low: 5638.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-23T00:00:00.000Z",
+    open: 6018.7,
+    close: 5986,
+    high: 6080.2,
+    low: 5720
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-22T00:00:00.000Z",
+    open: 6017.5,
+    close: 6018.7,
+    high: 6220,
+    low: 5875
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-21T00:00:00.000Z",
+    open: 5700.8,
+    close: 6017.5,
+    high: 6168.9,
+    low: 5602
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-20T00:00:00.000Z",
+    open: 5590.8,
+    close: 5700.8,
+    high: 5757.9,
+    low: 5527
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-19T00:00:00.000Z",
+    open: 5600,
+    close: 5590.8,
+    high: 5647.9,
+    low: 5100
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-18T00:00:00.000Z",
+    open: 5795,
+    close: 5600,
+    high: 5819.9,
+    low: 5510
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-17T00:00:00.000Z",
+    open: 5711.1,
+    close: 5795,
+    high: 5876.2,
+    low: 5531.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-16T00:00:00.000Z",
+    open: 5872.1,
+    close: 5711.1,
+    high: 5904.6,
+    low: 5405
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-15T00:00:00.000Z",
+    open: 5667.3,
+    close: 5872.1,
+    high: 5890,
+    low: 5588.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-14T00:00:00.000Z",
+    open: 5463.6,
+    close: 5667.3,
+    high: 5980,
+    low: 5394.9
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-13T00:00:00.000Z",
+    open: 4822,
+    close: 5463.6,
+    high: 5467.5,
+    low: 4800.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-12T00:00:00.000Z",
+    open: 4771.7,
+    close: 4822,
+    high: 4887,
+    low: 4706
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-11T00:00:00.000Z",
+    open: 4798.8,
+    close: 4771.7,
+    high: 4943.7,
+    low: 4698.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-10T00:00:00.000Z",
+    open: 4591,
+    close: 4798.8,
+    high: 4914.5,
+    low: 4546.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-09T00:00:00.000Z",
+    open: 4445.3,
+    close: 4591,
+    high: 4619.6,
+    low: 4429.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-08T00:00:00.000Z",
+    open: 4372.1,
+    close: 4445.3,
+    high: 4484,
+    low: 4307
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-07T00:00:00.000Z",
+    open: 4311.4,
+    close: 4372.1,
+    high: 4430,
+    low: 4291.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-06T00:00:00.000Z",
+    open: 4213.3,
+    close: 4311.4,
+    high: 4377.5,
+    low: 4134.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-05T00:00:00.000Z",
+    open: 4318.3,
+    close: 4213.3,
+    high: 4339,
+    low: 4162
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-04T00:00:00.000Z",
+    open: 4388,
+    close: 4318.3,
+    high: 4435,
+    low: 4224.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-03T00:00:00.000Z",
+    open: 4382.8,
+    close: 4388,
+    high: 4458.8,
+    low: 4355.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-02T00:00:00.000Z",
+    open: 4327.3,
+    close: 4382.8,
+    high: 4384.1,
+    low: 4251.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-10-01T00:00:00.000Z",
+    open: 4164.8,
+    close: 4327.3,
+    high: 4355.7,
+    low: 4155
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-30T00:00:00.000Z",
+    open: 4187.9,
+    close: 4164.8,
+    high: 4240,
+    low: 4031.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-29T00:00:00.000Z",
+    open: 4202.5,
+    close: 4187.9,
+    high: 4276.7,
+    low: 4125
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-28T00:00:00.000Z",
+    open: 3874,
+    close: 4202.5,
+    high: 4220,
+    low: 3866.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-27T00:00:00.000Z",
+    open: 3925.5,
+    close: 3874,
+    high: 3981.3,
+    low: 3850
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-26T00:00:00.000Z",
+    open: 3660.4,
+    close: 3925.5,
+    high: 3980,
+    low: 3656
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-25T00:00:00.000Z",
+    open: 3778.9,
+    close: 3660.4,
+    high: 3781.9,
+    low: 3595.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-24T00:00:00.000Z",
+    open: 3603.5,
+    close: 3778.9,
+    high: 3826.5,
+    low: 3560
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-23T00:00:00.000Z",
+    open: 3611,
+    close: 3603.5,
+    high: 3765,
+    low: 3515
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-22T00:00:00.000Z",
+    open: 3867.1,
+    close: 3611,
+    high: 3903.5,
+    low: 3571.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-21T00:00:00.000Z",
+    open: 3883.8,
+    close: 3867.1,
+    high: 4060,
+    low: 3825
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-20T00:00:00.000Z",
+    open: 4110.2,
+    close: 3883.8,
+    high: 4130,
+    low: 3838.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-19T00:00:00.000Z",
+    open: 3687.1,
+    close: 4110.2,
+    high: 4149,
+    low: 3687
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-18T00:00:00.000Z",
+    open: 3697,
+    close: 3687.1,
+    high: 3810,
+    low: 3470.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-17T00:00:00.000Z",
+    open: 3706.1,
+    close: 3697,
+    high: 3900,
+    low: 3531.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-16T00:00:00.000Z",
+    open: 3222.9,
+    close: 3706.1,
+    high: 3841.1,
+    low: 2939.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-15T00:00:00.000Z",
+    open: 3856.6,
+    close: 3222.9,
+    high: 3920.7,
+    low: 3200.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-14T00:00:00.000Z",
+    open: 4148.8,
+    close: 3856.6,
+    high: 4152.1,
+    low: 3722.9
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-13T00:00:00.000Z",
+    open: 4207,
+    close: 4148.8,
+    high: 4380,
+    low: 4055
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-12T00:00:00.000Z",
+    open: 4239.5,
+    close: 4207,
+    high: 4380,
+    low: 4105.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-11T00:00:00.000Z",
+    open: 4325.8,
+    close: 4239.5,
+    high: 4344,
+    low: 4012.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-10T00:00:00.000Z",
+    open: 4317.9,
+    close: 4325.8,
+    high: 4416.1,
+    low: 4185.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-09T00:00:00.000Z",
+    open: 4613.9,
+    close: 4317.9,
+    high: 4689.7,
+    low: 4116
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-08T00:00:00.000Z",
+    open: 4608.2,
+    close: 4613.9,
+    high: 4678,
+    low: 4476.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-07T00:00:00.000Z",
+    open: 4427,
+    close: 4608.2,
+    high: 4662.9,
+    low: 4410.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-06T00:00:00.000Z",
+    open: 4339.9,
+    close: 4427,
+    high: 4505,
+    low: 4061.3
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-05T00:00:00.000Z",
+    open: 4624.2,
+    close: 4339.9,
+    high: 4630,
+    low: 4161.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-04T00:00:00.000Z",
+    open: 4633.1,
+    close: 4624.2,
+    high: 4742.2,
+    low: 4412.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-03T00:00:00.000Z",
+    open: 4944.5,
+    close: 4633.1,
+    high: 5013.3,
+    low: 4487.3
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-02T00:00:00.000Z",
+    open: 4723.9,
+    close: 4944.5,
+    high: 4944.5,
+    low: 4678
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-09-01T00:00:00.000Z",
+    open: 4569.2,
+    close: 4723.9,
+    high: 4769,
+    low: 4569.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-31T00:00:00.000Z",
+    open: 4591.8,
+    close: 4569.2,
+    high: 4666.5,
+    low: 4473.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-30T00:00:00.000Z",
+    open: 4390.8,
+    close: 4591.8,
+    high: 4709.9,
+    low: 4333.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-29T00:00:00.000Z",
+    open: 4341.9,
+    close: 4390.8,
+    high: 4413.3,
+    low: 4169
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-28T00:00:00.000Z",
+    open: 4334.9,
+    close: 4341.9,
+    high: 4414,
+    low: 4300.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-27T00:00:00.000Z",
+    open: 4357.4,
+    close: 4334.9,
+    high: 4371.3,
+    low: 4234.1
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-26T00:00:00.000Z",
+    open: 4318.6,
+    close: 4357.4,
+    high: 4472.6,
+    low: 4256
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-25T00:00:00.000Z",
+    open: 4138,
+    close: 4318.6,
+    high: 4368,
+    low: 4085.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-24T00:00:00.000Z",
+    open: 4101.6,
+    close: 4138,
+    high: 4259.9,
+    low: 4050
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-23T00:00:00.000Z",
+    open: 3998.1,
+    close: 4101.6,
+    high: 4187.3,
+    low: 3550
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-22T00:00:00.000Z",
+    open: 4049.4,
+    close: 3998.1,
+    high: 4087.4,
+    low: 3951
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-21T00:00:00.000Z",
+    open: 4131.1,
+    close: 4049.4,
+    high: 4164,
+    low: 4014.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-20T00:00:00.000Z",
+    open: 4101.1,
+    close: 4131.1,
+    high: 4183,
+    low: 3933
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-19T00:00:00.000Z",
+    open: 4278.3,
+    close: 4101.1,
+    high: 4368.3,
+    low: 3941.9
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-18T00:00:00.000Z",
+    open: 4402.3,
+    close: 4278.3,
+    high: 4498,
+    low: 4170
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-17T00:00:00.000Z",
+    open: 4158.1,
+    close: 4402.3,
+    high: 4415,
+    low: 3917
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-16T00:00:00.000Z",
+    open: 4328.5,
+    close: 4158.1,
+    high: 4440,
+    low: 3834.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-15T00:00:00.000Z",
+    open: 4077.9,
+    close: 4328.5,
+    high: 4353,
+    low: 3960.3
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-14T00:00:00.000Z",
+    open: 3874.4,
+    close: 4077.9,
+    high: 4215.1,
+    low: 3842
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-13T00:00:00.000Z",
+    open: 3651.8,
+    close: 3874.4,
+    high: 3987.6,
+    low: 3603.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-12T00:00:00.000Z",
+    open: 3412.2,
+    close: 3651.8,
+    high: 3718.6,
+    low: 3393.4
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-11T00:00:00.000Z",
+    open: 3341.2,
+    close: 3412.2,
+    high: 3443.9,
+    low: 3307.5
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-10T00:00:00.000Z",
+    open: 3422.1,
+    close: 3341.2,
+    high: 3430.2,
+    low: 3220
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-09T00:00:00.000Z",
+    open: 3395,
+    close: 3422.1,
+    high: 3486.7,
+    low: 3328
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-08T00:00:00.000Z",
+    open: 3221.8,
+    close: 3395,
+    high: 3442,
+    low: 3180.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-07T00:00:00.000Z",
+    open: 3257.8,
+    close: 3221.8,
+    high: 3305,
+    low: 3142.8
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-06T00:00:00.000Z",
+    open: 2854.9,
+    close: 3257.8,
+    high: 3341.6,
+    low: 2848.2
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-05T00:00:00.000Z",
+    open: 2787.7,
+    close: 2854.9,
+    high: 2875.1,
+    low: 2760.6
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-04T00:00:00.000Z",
+    open: 2706.9,
+    close: 2787.7,
+    high: 2805.8,
+    low: 2699.3
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-03T00:00:00.000Z",
+    open: 2730.1,
+    close: 2706.9,
+    high: 2766.6,
+    low: 2633.7
+    },
+    {
+    symbol: "XBTUSD",
+    timestamp: "2017-08-02T00:00:00.000Z",
+    open: 2851.1,
+    close: 2730.1,
+    high: 2913.1,
+    low: 2601.2
+    }
+    ]
