@@ -65,8 +65,8 @@ http.listen(port, function(){
 
 
 
-function getOHLCdata() {
-    https.get(bitmexUrl, (resp) => {
+function getOHLCdata(url) {
+    https.get(url, (resp) => {
         resp.on('data', (chunk) => {
             ohlcData += chunk;
         });
