@@ -17,7 +17,7 @@ class ohlcDataModel {
 function checkTrend(data, period) {
     data = data.map(element => { return element.diff })
     return data.reduce((a, b, index) => {
-        return index > period ? a + b : null;
+        return index > (data.length - period) ? a + b : null;
     });
 }
 
@@ -53,7 +53,6 @@ const tradeBucketedPath = tradePath + '/bucketed';
 function groupSupres(data) {
     let result = data.sort().reduce((r, n) => {
         let lastSubArray = r[r.length - 1];
-
         if (!lastSubArray || (lastSubArray[lastSubArray.length - 1] * 1.03 < n || lastSubArray[lastSubArray.length - 1] * 0.97 > n)) {
             r.push([]);
         }
@@ -68,21 +67,35 @@ function groupSupres(data) {
     }).sort((a,b) => a.price - b.price);
 }
 
-
-
-function checkSupRes(currenPrice, trend1m, sup1d, sup5m, sup1m, res1d, res5m, res1m) {
-    let s1d = sup1d.filter( element => element.price < currenPrice).sort((a,b) => b.price-a.price)[0];
-    let s5m = sup5m.filter( element => element.price < currenPrice).sort((a,b) => b.price-a.price)[0];
-    let s1m = sup1m.filter( element => element.price < currenPrice).sort((a,b) => b.price-a.price)[0];
-    let r1d = res1d.filter( element => element.price > currenPrice).sort((a,b) => a.price-b.price)[0];
-    let r5m = res5m.filter( element => element.price > currenPrice).sort((a,b) => a.price-b.price)[0];
-    let r1m = res1m.filter( element => element.price > currenPrice).sort((a,b) => a.price-b.price)[0];
-    console.log(trend1m,currenPrice,"RESISTANCE",r1d,r5m,r1m,"SUPPORT",s1d,s5m,s1m)
-    if(trend1m < 0) {
-        
+function checkSupRes(currentPrice, trend1m, sup1d, sup5m, sup1m, res1d, res5m, res1m) {
+    let s1d = sup1d.filter( element => (element.price * 0.97) < currentPrice).sort((a,b) => b.price-a.price)[0];
+    let s5m = sup5m.filter( element => (element.price * 0.97) < currentPrice).sort((a,b) => b.price-a.price)[0];
+    let s1m = sup1m.filter( element => (element.price * 0.97) < currentPrice).sort((a,b) => b.price-a.price)[0];
+    let r1d = res1d.filter( element => (element.price * 1.03) > currentPrice).sort((a,b) => a.price-b.price)[0];
+    let r5m = res5m.filter( element => (element.price * 1.03) > currentPrice).sort((a,b) => a.price-b.price)[0];
+    let r1m = res1m.filter( element => (element.price * 1.03) > currentPrice).sort((a,b) => a.price-b.price)[0];
+    if (s1d == undefined) { s1d = { price: 0 } }
+    if (s5m == undefined) { s5m = { price: 0 } }
+    if (s1m == undefined) { s1m = { price: 0 } }
+    if (r1d == undefined) { r1d = { price: 99999 } }
+    if (r5m == undefined) { r5m = { price: 99999 } }
+    if (r1m == undefined) { r1m = { price: 99999 } }
+    console.log("CURRENT PRICE:", currentPrice);
+    console.log("CURRENT TREND:", trend1m);
+    closestResistance = Math.min(...[r1d.price,r5m.price,r1m.price]);
+    closestSupport = Math.max(...[s1d.price,s5m.price,s1m.price]);
+    
+    let res = Math.abs(closestResistance*1.03-currentPrice);
+    let sup = Math.abs(closestSupport*0.97-currentPrice);
+    let resDiff = res/(res+sup)
+    let supDiff = sup/(res+sup)
+    console.log("Resistance", Math.floor(closestResistance*1.03), resDiff);
+    console.log("Support", Math.floor(closestSupport*0.97), supDiff);
+    if(trend1m < 0 && currentPrice < closestResistance*1.03 && supDiff < 0.25 ) {
+        console.log("SELL")
     }
-    if(trend1m > 0) {
-
+    if(trend1m > 0 && currentPrice > closestSupport*0.97 && resDiff < 0.25) {
+        console.log("BUY")
     }
 }
 
