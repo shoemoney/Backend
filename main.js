@@ -43,8 +43,12 @@ function calcExtremes(data) {
 
 const get = 'GET';
 const post = 'POST';
+const del = 'DELETE';
+
+
 const orderPath = '/api/v1/order';
 const orderClosePath = orderPath + '/closePosition';
+const orderCancellPath = orderPath + '/all';
 const userWalletPath = '/api/v1/user/walletSummary';
 const positionPath = '/api/v1/position';
 const leveragePath = positionPath + '/leverage';
@@ -134,34 +138,39 @@ function checkCurrentStatus(currentPrice) {
 }
 
 function placeOrder(orderSide, stopPrice) {
-    console.log("PLACE ORDER")
+    console.log("CANCEL ALL ORDERS")
     let data = null;
-    data = { currency: "XBt" };
-    bitmex(get, userWalletPath, data).then((result) => {
-        let walletBalance = result[2].walletBalance;
-        data = { symbol: "XBTUSD", count: 1, reverse: true };
-        bitmex(get, tradePath, data).then((res) => {
-            let currentPrice = Math.floor(+res[0].price);
-            let quantity = (currentPrice * walletBalance * 50) / 100000000;
-            data = { symbol: "XBTUSD", orderQty: Math.floor(1 + quantity * 0.3), side: orderSide, ordType: "Market" }
-            bitmex(post, orderPath, data).then((res) => {
-                if (orderSide == "Sell") {
-                    var opositeSide = "Buy"
-                    var liquidation = currentPrice+15
-                }
-                if (orderSide == "Buy") {
-                    var opositeSide = "Sell"
-                    var liquidation = currentPrice-15
-                }
-                data = { symbol: "XBTUSD", price: stopPrice }
-                bitmex(post, orderClosePath, data).then((res) => {
-                    data = { symbol: "XBTUSD", side: opositeSide, ordType: "Stop", execInst: "Close", stopPx: liquidation }
-                    bitmex(post, orderPath, data).then((res) => {
+    data = { symbol: "XBTUSD" };
+    bitmex(del, orderCancellPath, data).then((result) => {
+        console.log("PLACE NEW ORDER")
+        data = { currency: "XBt" };
+        bitmex(get, userWalletPath, data).then((result) => {
+            let walletBalance = result[2].walletBalance;
+            data = { symbol: "XBTUSD", count: 1, reverse: true };
+            bitmex(get, tradePath, data).then((res) => {
+                let currentPrice = Math.floor(+res[0].price);
+                let quantity = (currentPrice * walletBalance * 65) / 100000000;
+                console.log(quantity);
+                data = { symbol: "XBTUSD", orderQty: Math.floor(1 + quantity * 0.3), side: orderSide, ordType: "Market" }
+                bitmex(post, orderPath, data).then((res) => {
+                    if (orderSide == "Sell") {
+                        var opositeSide = "Buy"
+                        var liquidation = currentPrice+15
+                    }
+                    if (orderSide == "Buy") {
+                        var opositeSide = "Sell"
+                        var liquidation = currentPrice-15
+                    }
+                    data = { symbol: "XBTUSD", price: stopPrice }
+                    bitmex(post, orderClosePath, data).then((res) => {
+                        data = { symbol: "XBTUSD", side: opositeSide, ordType: "Stop", execInst: "Close", stopPx: liquidation }
+                        bitmex(post, orderPath, data).then((res) => {
+                        });
                     });
                 });
             });
-        });
-    })
+        })
+    });
 }
 
 client.on('connectFailed', function (error) {
@@ -181,9 +190,10 @@ client.on('connect', function (connection) {
             bitmex(get, positionPath,data).then((res) => {
                 if(res[0].isOpen) {
                     console.log("Position is open - take no action");
+                    console.log("Current status:", res[0].unrealisedRoePcnt*100);
                     if(res[0].unrealisedRoePcnt > 0.2) {
-                        console.log("Over 20% of income - close position")
                         let stopPrice = JSON.parse(message.utf8Data).data[0].close
+                        console.log("ROE over 20% - close position", JSON.parse(message.utf8Data).data[0].close)
                         data = { symbol: "XBTUSD", price: stopPrice }
                             bitmex(post, orderClosePath, data).then((res) => {
                             })
