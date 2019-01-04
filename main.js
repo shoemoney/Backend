@@ -25,101 +25,39 @@ function checkTrend(data, period) {
     else {
         return 0;
     }
-
 }
 
 
-function calcExtremes(data) {
+function calcExtremes(data, type) {
+    const range = 8;
+    const margin = Math.floor(data.map(element => element.avg).reduce((a, b) => a + b) / data.length * 0.0025)
     let extremes = {
         min: [],
         max: []
     };
-    for (index = 7; index < 493; index++) {
-        if (
-            (data[index].close > data[index + 7].close) &&
-            (data[index].close > data[index + 6].close) &&
-            (data[index].close > data[index + 5].close) &&
-            (data[index].close > data[index + 4].close) &&
-            (data[index].close > data[index + 3].close) &&
-            (data[index].close > data[index + 2].close) &&
-            (data[index].close > data[index + 1].close)
-        ) {
+    for (index = range; index < data.length - range; index++) {
+        let sampleLeft = data.slice(index - range, index);
+        let sampleRight = data.slice(index + 1, index + range + 1);
+        let leftLengthMax = sampleLeft.filter(element => element.close <= data[index].close).length;
+        let rightLengthMax = sampleRight.filter(element => element.close <= data[index].close).length;
+        let leftLengthMin = sampleLeft.filter(element => element.close >= data[index].close).length;
+        let rightLengthMin = sampleRight.filter(element => element.close >= data[index].close).length;
+        if (leftLengthMax === range && rightLengthMax === range) {
             if (
-                (data[index].close > data[index - 7].close) &&
-                (data[index].close > data[index - 6].close) &&
-                (data[index].close > data[index - 5].close) &&
-                (data[index].close > data[index - 4].close) &&
-                (data[index].close > data[index - 3].close) &&
-                (data[index].close > data[index - 2].close) &&
-                (data[index].close > data[index - 1].close)
+                (Math.min(...sampleLeft.map(element => element.close)) <= (data[index].close - margin)) &&
+                (Math.min(...sampleRight.map(element => element.close)) <= (data[index].close - margin))
             ) {
-                if (
-                    (Math.min(
-                        data[index - 7].close,
-                        data[index - 6].close,
-                        data[index - 5].close,
-                        data[index - 4].close,
-                        data[index - 3].close,
-                        data[index - 2].close,
-                        data[index - 1].close,
-                    ) < (data[index].close - 7)) &&
-                    (Math.min(
-                        data[index + 7].close,
-                        data[index + 6].close,
-                        data[index + 5].close,
-                        data[index + 4].close,
-                        data[index + 3].close,
-                        data[index + 2].close,
-                        data[index + 1].close,
-                    ) < (data[index].close - 7))
-                ) {
-                    extremes.max.push({ max: data[index].close, timestamp: data[index].timestamp })
-                }
+                extremes.max.push({ max: data[index].close, timestamp: data[index].timestamp })
             }
         }
-        if (
-            (data[index].close < data[index + 7].close) &&
-            (data[index].close < data[index + 6].close) &&
-            (data[index].close < data[index + 5].close) &&
-            (data[index].close < data[index + 4].close) &&
-            (data[index].close < data[index + 3].close) &&
-            (data[index].close < data[index + 2].close) &&
-            (data[index].close < data[index + 1].close)
-        ) {
+        if (leftLengthMin === range && rightLengthMin === range) {
             if (
-                (data[index].close < data[index - 7].close) &&
-                (data[index].close < data[index - 6].close) &&
-                (data[index].close < data[index - 5].close) &&
-                (data[index].close < data[index - 4].close) &&
-                (data[index].close < data[index - 3].close) &&
-                (data[index].close < data[index - 2].close) &&
-                (data[index].close < data[index - 1].close)
+                (Math.max(...sampleLeft.map(element => element.close)) >= (data[index].close + margin)) &&
+                (Math.max(...sampleRight.map(element => element.close)) >= (data[index].close + margin))
             ) {
-                if (
-                    (Math.max(
-                        data[index - 7].close,
-                        data[index - 6].close,
-                        data[index - 5].close,
-                        data[index - 4].close,
-                        data[index - 3].close,
-                        data[index - 2].close,
-                        data[index - 1].close,
-                    ) > (data[index].close + 7)) &&
-                    (Math.max(
-                        data[index + 7].close,
-                        data[index + 6].close,
-                        data[index + 5].close,
-                        data[index + 4].close,
-                        data[index + 3].close,
-                        data[index + 2].close,
-                        data[index + 1].close,
-                    ) > (data[index].close + 7))
-                ) {
-                    extremes.min.push({ min: data[index].close, timestamp: data[index].timestamp })
-                }
+                extremes.min.push({ min: data[index].close, timestamp: data[index].timestamp })
             }
         }
-
     }
     return extremes
 }
@@ -156,7 +94,7 @@ function groupSupres(data) {
             price: Math.floor(element.reduce((a, b) => a + b) / element.length),
             quantity: element.length
         }
-    }).filter(item => item.quantity > 1).sort((a, b) => a.price - b.price);
+    }).filter(item => item.quantity > 2).sort((a, b) => a.price - b.price);
 }
 function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, res5m) {
     let s1d = sup1d.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
@@ -178,19 +116,17 @@ function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, r
     let resDiff = res / (res + sup)
     let supDiff = sup / (res + sup)
     console.log(" CURRENT PRICE:", currentPrice, " *** TREND", trend1m, " SUP:", closestSupport, " RES:", closestResistance, " *** SUP DIF:", supDiff, " RES DIFF", resDiff)
-    if (trend1m < 0 && resDiff < 0.282 && closestResistance > currentPrice) {
+    if (trend1m < 0 && resDiff < 0.282 && resDiff > 0.172 && closestResistance > currentPrice) {
         console.log("SET SELL ORDER")
         console.log("SUPPORT:", closestSupport, "RESISTANCE:", closestResistance);
         console.log("RES/SUP:", resDiff);
-        console.log("ORDER: MARKET");
         console.log("CLOSE:", closestSupport + 5);
         placeOrder("Sell", closestSupport + 5)
     }
-    if (trend1m > 0 && supDiff < 0.282 && closestSupport < currentPrice) {
+    if (trend1m > 0 && supDiff < 0.282 && supDiff > 0.172 && closestSupport < currentPrice) {
         console.log("SET BUY ORDER")
         console.log("SUPPORT:", closestSupport, "RESISTANCE:", closestResistance);
         console.log("RES/SUP:", resDiff);
-        console.log("ORDER: MARKET");
         console.log("CLOSE:", closestResistance - 5);
         placeOrder("Buy", closestResistance - 5)
     }
@@ -198,26 +134,25 @@ function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, r
 
 function checkCurrentStatus(currentPrice) {
     let data = null;
-    data = { symbol: "XBTUSD", binSize: "1d", count: 500, reverse: true };
+    data = { symbol: "XBTUSD", binSize: "1d", count: 750, reverse: true };
     bitmex(get, tradeBucketedPath, data).then((result) => {
         var ohlcData1d = result.reverse().map(element => element = new ohlcDataModel(element));
-        var extremes1d = calcExtremes(ohlcData1d);
+        var extremes1d = calcExtremes(ohlcData1d, "1day");
         var support1d = groupSupres(extremes1d.min.map(item => item.min));
         var resistance1d = groupSupres(extremes1d.max.map(item => item.max));
-        data = { symbol: "XBTUSD", binSize: "1h", count: 500, reverse: true };
+        data = { symbol: "XBTUSD", binSize: "1h", count: 750, reverse: true };
         bitmex(get, tradeBucketedPath, data).then((result) => {
             var ohlcData1h = result.reverse().map(element => element = new ohlcDataModel(element));
-            var extremes1h = calcExtremes(ohlcData1h);
+            var extremes1h = calcExtremes(ohlcData1h, "1hour");
             var support1h = groupSupres(extremes1h.min.map(item => item.min));
             var resistance1h = groupSupres(extremes1h.max.map(item => item.max));
-            console.log(extremes1h,resistance1h)
-            data = { symbol: "XBTUSD", binSize: "5m", count: 500, reverse: true };
+            data = { symbol: "XBTUSD", binSize: "5m", count: 750, reverse: true };
             bitmex(get, tradeBucketedPath, data).then((result) => {
                 var ohlcData5m = result.reverse().map(element => element = new ohlcDataModel(element));
-                var extremes5m = calcExtremes(ohlcData5m);
+                var extremes5m = calcExtremes(ohlcData5m, "5min");
                 var support5m = groupSupres(extremes5m.min.map(item => item.min));
                 var resistance5m = groupSupres(extremes5m.max.map(item => item.max));
-                data = { symbol: "XBTUSD", binSize: "1m", count: 500, reverse: true };
+                data = { symbol: "XBTUSD", binSize: "1m", count: 750, reverse: true };
                 bitmex(get, tradeBucketedPath, data).then((result) => {
                     var ohlcData1m = result.reverse().map(element => element = new ohlcDataModel(element));
                     var trend1m = checkTrend(ohlcData1m, 5);
@@ -225,7 +160,7 @@ function checkCurrentStatus(currentPrice) {
                 });
             });
         })
-        
+
     });
 }
 
@@ -242,7 +177,6 @@ function placeOrder(orderSide, stopPrice) {
             bitmex(get, tradePath, data).then((res) => {
                 let currentPrice = Math.floor(+res[0].price);
                 let quantity = (currentPrice * walletBalance * 65) / 100000000;
-                console.log(quantity);
                 data = { symbol: "XBTUSD", orderQty: Math.floor(1 + quantity * 0.3), side: orderSide, ordType: "Market" }
                 bitmex(post, orderPath, data).then((res) => {
                     if (orderSide == "Sell") {
@@ -278,16 +212,15 @@ client.on('connect', function (connection) {
         console.log('echo-protocol Connection Closed');
     });
     connection.on('message', function (message) {
-        console.log(stopOrderId);
         if (JSON.parse(message.utf8Data).data) {
             let data = {};
             bitmex(get, positionPath, data).then((res) => {
-                if (res[0].isOpen) {
+                if (!res.length && res[0].isOpen) { // !
                     console.log("Position is open");
                     console.log("Current status:", res[0].unrealisedRoePcnt * 100);
                     if (res[0].currentQty < 0) {
                         var orderSide = "Buy";
-                        var stopPrice = JSON.parse(message.utf8Data).data[0].close + 10;
+                        var stopPrice = JSON.parse(message.utf8Data).data[0].close + 5;
                         if (stopPrice < lastOrderPrice) {
                             lastOrder = 1
                         } else {
@@ -296,7 +229,7 @@ client.on('connect', function (connection) {
                     }
                     if (res[0].currentQty > 0) {
                         var orderSide = "Sell";
-                        var stopPrice = JSON.parse(message.utf8Data).data[0].close - 10;
+                        var stopPrice = JSON.parse(message.utf8Data).data[0].close - 5;
                         if (stopPrice > lastOrderPrice) {
                             lastOrder = 1
                         } else {
@@ -304,14 +237,14 @@ client.on('connect', function (connection) {
                         }
                     }
                     if (res[0].unrealisedRoePcnt > 0.1 && lastOrder) {
-                            console.log("ROE over 10% - secure income / set stop at position open price", JSON.parse(message.utf8Data).data[0].close, stopPrice);
-                            data = { symbol: "XBTUSD" };
-                            bitmex(del, orderCancellPath, data).then((result) => {
-                                data = { symbol: "XBTUSD", side: orderSide, ordType: "Stop", execInst: "Close", stopPx: stopPrice }
-                                bitmex(post, orderPath, data).then((res) => {
-                                    lastOrderPrice = stopPrice;
-                                });
-                            })
+                        console.log("ROE over 10% - secure income / set stop at position open price", JSON.parse(message.utf8Data).data[0].close, stopPrice);
+                        data = { symbol: "XBTUSD" };
+                        bitmex(del, orderCancellPath, data).then((result) => {
+                            data = { symbol: "XBTUSD", side: orderSide, ordType: "Stop", stopPx: stopPrice, orderQty: res[0].currentQty }
+                            bitmex(post, orderPath, data).then((res) => {
+                                lastOrderPrice = stopPrice;
+                            });
+                        })
                     }
                 } else {
                     checkCurrentStatus(JSON.parse(message.utf8Data).data[0].close);
@@ -321,4 +254,3 @@ client.on('connect', function (connection) {
     });
 });
 client.connect('wss://www.bitmex.com/realtime?subscribe=tradeBin1m:XBTUSD');
-// checkCurrentStatus(4000);
