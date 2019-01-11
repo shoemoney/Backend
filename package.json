@@ -10,8 +10,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "brain.js": "1.6.0",
     "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "expresss": "^0.0.0",
+    "mongoose": "^5.4.3",
     "request": "^2.88.0",
     "rxjs": "^6.3.3",
     "socket.io": "^2.2.0",

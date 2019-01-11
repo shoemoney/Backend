@@ -1,21 +1,11 @@
 const bitmex = require('./bitmex.js');
 var WebSocketClient = require('websocket').client;
 var client = new WebSocketClient();
+let ohlcDataModel = require('./models/ohlcData.model')
 
-class ohlcDataModel {
-    constructor(data) {
-        this.open = Math.floor(data.open);
-        this.close = Math.floor(data.close);
-        this.high = Math.floor(data.high);
-        this.low = Math.floor(data.low);
-        this.timestamp = new Date(data.timestamp);
-        this.diff = Math.floor(data.close - data.open);
-        this.avg = Math.floor((data.low + data.high) / 2);
-    }
-}
 
 function checkTrend(data, period) {
-    data = data.map(element => { return element.diff }).slice(period);
+    data = data.map(element => { return element.diff() }).slice(period);
     if ((data.filter(element => element < 0).length > 2) && (data[data.length - 1] < 0)) {
         return -1;
     }
@@ -29,8 +19,8 @@ function checkTrend(data, period) {
 
 
 function calcExtremes(data, type) {
-    const range = 8;
-    const margin = Math.floor(data.map(element => element.avg).reduce((a, b) => a + b) / data.length * 0.0025)
+    const range = 15;
+    const margin = Math.floor(data.map(element => element.avg()).reduce((a, b) => a + b) / data.length * 0.0027)
     let extremes = {
         min: [],
         max: []
@@ -94,11 +84,11 @@ function groupSupres(data) {
             price: Math.floor(element.reduce((a, b) => a + b) / element.length),
             quantity: element.length
         }
-    }).filter(item => item.quantity > 2).sort((a, b) => a.price - b.price);
+    }).filter(item => item.quantity > 1).sort((a, b) => a.price - b.price);
 }
 function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, res5m) {
     let s1d = sup1d.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
-    let s1h = sup1h.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];;
+    let s1h = sup1h.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
     let s5m = sup5m.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
     let r1d = res1d.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
     let r1h = res1h.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
@@ -168,7 +158,7 @@ function placeOrder(orderSide, stopPrice) {
     console.log("CANCEL ALL ORDERS")
     let data = null;
     data = { symbol: "XBTUSD" };
-    bitmex(del, orderCancellPath, data).then((result) => {
+    bitmex(del, orderCancellPath, data).then(() => {
         console.log("PLACE NEW ORDER")
         data = { currency: "XBt" };
         bitmex(get, userWalletPath, data).then((result) => {
@@ -176,9 +166,10 @@ function placeOrder(orderSide, stopPrice) {
             data = { symbol: "XBTUSD", count: 1, reverse: true };
             bitmex(get, tradePath, data).then((res) => {
                 let currentPrice = Math.floor(+res[0].price);
-                let quantity = (currentPrice * walletBalance * 65) / 100000000;
+                let quantity = Math.floor(1 + (currentPrice * walletBalance * 65) / 100000000);
+                console.log(quantity)
                 data = { symbol: "XBTUSD", orderQty: Math.floor(1 + quantity * 0.3), side: orderSide, ordType: "Market" }
-                bitmex(post, orderPath, data).then((res) => {
+                bitmex(post, orderPath, data).then(() => {
                     if (orderSide == "Sell") {
                         var opositeSide = "Buy";
                         var liquidation = currentPrice + 15;
@@ -215,7 +206,7 @@ client.on('connect', function (connection) {
         if (JSON.parse(message.utf8Data).data) {
             let data = {};
             bitmex(get, positionPath, data).then((res) => {
-                if (!res.length && res[0].isOpen) { // !
+                if (!res.length && res[0].isOpen) {
                     console.log("Position is open");
                     console.log("Current status:", res[0].unrealisedRoePcnt * 100);
                     if (res[0].currentQty < 0) {
@@ -239,9 +230,9 @@ client.on('connect', function (connection) {
                     if (res[0].unrealisedRoePcnt > 0.1 && lastOrder) {
                         console.log("ROE over 10% - secure income / set stop at position open price", JSON.parse(message.utf8Data).data[0].close, stopPrice);
                         data = { symbol: "XBTUSD" };
-                        bitmex(del, orderCancellPath, data).then((result) => {
-                            data = { symbol: "XBTUSD", side: orderSide, ordType: "Stop", stopPx: stopPrice, orderQty: res[0].currentQty }
-                            bitmex(post, orderPath, data).then((res) => {
+                        bitmex(del, orderCancellPath, data).then(() => {
+                            data = { symbol: "XBTUSD", side: orderSide, ordType: "MarketIfTouched", stopPx: stopPrice, orderQty: res[0].currentQty }
+                            bitmex(post, orderPath, data).then(() => {
                                 lastOrderPrice = stopPrice;
                             });
                         })
