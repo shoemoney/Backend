@@ -38,7 +38,6 @@ exports.create = function (req, res) {
             timestamp: req.body.timestamp,
         }
     );
-        console.log(data)
     data.save(data, function (err) {
         if (err) {
             return next(err);

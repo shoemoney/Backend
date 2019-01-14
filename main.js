@@ -1,8 +1,16 @@
 const bitmex = require('./bitmex.js');
 var WebSocketClient = require('websocket').client;
 var client = new WebSocketClient();
-let ohlcDataModel = require('./models/ohlcData.model')
+let ohlcModel = require('./models/ohlcData.model');
+let ohlcData1dModel = ohlcModel.ohlcData1d;
+let ohlcData1hModel = ohlcModel.ohlcData1h;
+let ohlcData5mModel = ohlcModel.ohlcData5m;
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useCreateIndex: true, });
+mongoose.Promise = global.Promise;
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 function checkTrend(data, period) {
     data = data.map(element => { return element.diff() }).slice(period);
@@ -122,29 +130,71 @@ function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, r
     }
 }
 
+
+function checkForUpdate(data, type) {
+    let parameters = null;
+    let dateNow = new Date(Date.now());
+    let currentDate = dateNow.toISOString().split('T')[0];
+    let currentTime = dateNow.toISOString().split('T')[1];
+    data.find(function (err, element) {
+        if (err) return next(err);
+        let last = element.slice(-1)[0].timestamp;
+        let lastDate = last.toISOString().split('T')[0];
+        let lastTime = last.toISOString().split('T')[1];
+        console.log(currentDate, lastDate)
+        if (type == '1d') { 
+            if (lastDate != currentDate) {
+                var difference = new Date(currentDate) - new Date(lastDate);
+                console.log(difference)
+                parameters = { symbol: "XBTUSD", binSize: "1d", count: difference, reverse: true };
+                bitmex(get, tradeBucketedPath, data).then((result) => {});
+            };
+        };
+        if (type == '1h') {  };
+        if (type == '5m') {  };
+    })
+}
+checkForUpdate(ohlcData1dModel, '1d');
+// checkCurrentStatus(4000);
+
 function checkCurrentStatus(currentPrice) {
-    let data = null;
-    data = { symbol: "XBTUSD", binSize: "1d", count: 750, reverse: true };
+    // checkForUpdate(ohlcData1dModel, '1d');
+    // checkForUpdate(ohlcData1hModel, '1h');
+    // checkForUpdate(ohlcData5mModel, '5m');
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    let data = { symbol: "XBTUSD", binSize: "1d", count: 750, reverse: true };
     bitmex(get, tradeBucketedPath, data).then((result) => {
-        var ohlcData1d = result.reverse().map(element => element = new ohlcDataModel(element));
+        var ohlcData1d = result.reverse().map(element => element = new ohlcData1dModel(element));
+        ohlcData1d.forEach(element => { element.save()});
         var extremes1d = calcExtremes(ohlcData1d, "1day");
         var support1d = groupSupres(extremes1d.min.map(item => item.min));
         var resistance1d = groupSupres(extremes1d.max.map(item => item.max));
         data = { symbol: "XBTUSD", binSize: "1h", count: 750, reverse: true };
         bitmex(get, tradeBucketedPath, data).then((result) => {
-            var ohlcData1h = result.reverse().map(element => element = new ohlcDataModel(element));
+            var ohlcData1h = result.reverse().map(element => element = new ohlcData1hModel(element));
+            ohlcData1h.forEach(element => { element.save()});
             var extremes1h = calcExtremes(ohlcData1h, "1hour");
             var support1h = groupSupres(extremes1h.min.map(item => item.min));
             var resistance1h = groupSupres(extremes1h.max.map(item => item.max));
             data = { symbol: "XBTUSD", binSize: "5m", count: 750, reverse: true };
             bitmex(get, tradeBucketedPath, data).then((result) => {
-                var ohlcData5m = result.reverse().map(element => element = new ohlcDataModel(element));
+                var ohlcData5m = result.reverse().map(element => element = new ohlcData5mModel(element));
+                ohlcData5m.forEach(element => { element.save()});
                 var extremes5m = calcExtremes(ohlcData5m, "5min");
                 var support5m = groupSupres(extremes5m.min.map(item => item.min));
                 var resistance5m = groupSupres(extremes5m.max.map(item => item.max));
                 data = { symbol: "XBTUSD", binSize: "1m", count: 750, reverse: true };
                 bitmex(get, tradeBucketedPath, data).then((result) => {
-                    var ohlcData1m = result.reverse().map(element => element = new ohlcDataModel(element));
+                    var ohlcData1m = result.reverse().map(element => element = new ohlcData1mModel(element));
                     var trend1m = checkTrend(ohlcData1m, 5);
                     checkSupRes(currentPrice, trend1m, support1d, support1h, support5m, resistance1d, resistance1h, resistance5m);
                 });
@@ -206,7 +256,7 @@ client.on('connect', function (connection) {
         if (JSON.parse(message.utf8Data).data) {
             let data = {};
             bitmex(get, positionPath, data).then((res) => {
-                if (!res.length && res[0].isOpen) {
+                if (res.length != 0 && res[0].isOpen) {
                     console.log("Position is open");
                     console.log("Current status:", res[0].unrealisedRoePcnt * 100);
                     if (res[0].currentQty < 0) {
@@ -238,7 +288,7 @@ client.on('connect', function (connection) {
                         })
                     }
                 } else {
-                    checkCurrentStatus(JSON.parse(message.utf8Data).data[0].close);
+                    // checkCurrentStatus(JSON.parse(message.utf8Data).data[0].close);
                 }
             })
         }
