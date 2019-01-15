@@ -1,11 +1,11 @@
-const bitmex = require('./bitmex_api/bitmex.js');
+const bitmex = require('./app/core/bitmex.js');
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 let port = 3000;
 var WebSocketClient = require('websocket').client;
 var client = new WebSocketClient();
-const ohlcRoute = require('./routes/ohlcData.route'); 
+const ohlcRoute = require('./app/routes/ohlcData.route'); 
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useCreateIndex: true, });
@@ -19,7 +19,7 @@ app.listen(port, () => {
     console.log('Server is up and running on port numner ' + port);
 });
 
-let ohlcModel = require('./models/ohlcData.model');
+let ohlcModel = require('./app/db/models/ohlcData.model');
 let ohlcData1dModel = ohlcModel.ohlcData1d;
 let ohlcData1hModel = ohlcModel.ohlcData1h;
 let ohlcData5mModel = ohlcModel.ohlcData5m;
