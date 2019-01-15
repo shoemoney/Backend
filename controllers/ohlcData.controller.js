@@ -1,4 +1,5 @@
-const ohlcData = require('../models/ohlcData.model');
+const ohlc = require('../models/ohlcData.model');
+const ohlcData = ohlc.ohlcData1d; 
 
 exports.getAll = function (req, res) {
     ohlcData.find(function (err, element) {

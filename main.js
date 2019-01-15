@@ -1,16 +1,49 @@
-const bitmex = require('./bitmex.js');
+const bitmex = require('./bitmex_api/bitmex.js');
+const express = require('express');
+const bodyParser = require('body-parser');
+const app = express();
+let port = 3000;
 var WebSocketClient = require('websocket').client;
 var client = new WebSocketClient();
-let ohlcModel = require('./models/ohlcData.model');
-let ohlcData1dModel = ohlcModel.ohlcData1d;
-let ohlcData1hModel = ohlcModel.ohlcData1h;
-let ohlcData5mModel = ohlcModel.ohlcData5m;
+const ohlcRoute = require('./routes/ohlcData.route'); 
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useCreateIndex: true, });
 mongoose.Promise = global.Promise;
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: false}));
+app.listen(port, () => {
+    console.log('Server is up and running on port numner ' + port);
+});
+
+let ohlcModel = require('./models/ohlcData.model');
+let ohlcData1dModel = ohlcModel.ohlcData1d;
+let ohlcData1hModel = ohlcModel.ohlcData1h;
+let ohlcData5mModel = ohlcModel.ohlcData5m;
+let ohlcData1mModel = ohlcModel.ohlcData1m;
+app.use('/ohlcData', ohlcRoute);
+
+var stopOrderId = null;
+var lastOrder = null;
+var lastOrderPrice = null;
+
+const get = 'GET';
+const post = 'POST';
+const put = 'PUT';
+const del = 'DELETE';
+
+const orderPath = '/api/v1/order';
+const orderClosePath = orderPath + '/closePosition';
+const orderCancellPath = orderPath + '/all';
+const userWalletPath = '/api/v1/user/walletSummary';
+const positionPath = '/api/v1/position';
+const leveragePath = positionPath + '/leverage';
+const tradePath = '/api/v1/trade';
+const tradeBucketedPath = tradePath + '/bucketed';
+
 
 function checkTrend(data, period) {
     data = data.map(element => { return element.diff() }).slice(period);
@@ -26,7 +59,7 @@ function checkTrend(data, period) {
 }
 
 
-function calcExtremes(data, type) {
+function calcExtremes(data) {
     const range = 15;
     const margin = Math.floor(data.map(element => element.avg()).reduce((a, b) => a + b) / data.length * 0.0027)
     let extremes = {
@@ -61,22 +94,6 @@ function calcExtremes(data, type) {
 }
 
 
-const get = 'GET';
-const post = 'POST';
-const put = 'PUT';
-const del = 'DELETE';
-var stopOrderId = null;
-var lastOrder = null;
-var lastOrderPrice = null;
-
-const orderPath = '/api/v1/order';
-const orderClosePath = orderPath + '/closePosition';
-const orderCancellPath = orderPath + '/all';
-const userWalletPath = '/api/v1/user/walletSummary';
-const positionPath = '/api/v1/position';
-const leveragePath = positionPath + '/leverage';
-const tradePath = '/api/v1/trade';
-const tradeBucketedPath = tradePath + '/bucketed';
 
 function groupSupres(data) {
     let result = data.sort().reduce((r, n) => {
@@ -94,34 +111,26 @@ function groupSupres(data) {
         }
     }).filter(item => item.quantity > 1).sort((a, b) => a.price - b.price);
 }
-function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, res5m) {
-    let s1d = sup1d.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
-    let s1h = sup1h.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
-    let s5m = sup5m.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
-    let r1d = res1d.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
-    let r1h = res1h.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
-    let r5m = res5m.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
-    if (s1d == undefined) { s1d = { price: 0 } }
-    if (s1h == undefined) { s1h = { price: 0 } }
-    if (s5m == undefined) { s5m = { price: 0 } }
-    if (r1d == undefined) { r1d = { price: 99999 } }
-    if (r1h == undefined) { r1h = { price: 99999 } }
-    if (r5m == undefined) { r5m = { price: 99999 } }
-    closestResistance = Math.min(...[r1d.price, r1h.price, r5m.price]);
-    closestSupport = Math.max(...[s1d.price, s1h.price, s5m.price]);
-    let res = Math.abs(closestResistance - currentPrice);
-    let sup = Math.abs(closestSupport - currentPrice);
-    let resDiff = res / (res + sup)
-    let supDiff = sup / (res + sup)
-    console.log(" CURRENT PRICE:", currentPrice, " *** TREND", trend1m, " SUP:", closestSupport, " RES:", closestResistance, " *** SUP DIF:", supDiff, " RES DIFF", resDiff)
-    if (trend1m < 0 && resDiff < 0.282 && resDiff > 0.172 && closestResistance > currentPrice) {
+function checkSupRes(currentPrice, trend, support, resistance) {
+    let sup = support.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
+    let res = resistance.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];
+    if (sup == undefined) { sup = { price: 0 } };
+    if (res == undefined) { res = { price: 99999 } };
+    closestResistance = res.price;
+    closestSupport = sup.price;
+    let setRes = Math.abs(closestResistance - currentPrice);
+    let setSup = Math.abs(closestSupport - currentPrice);
+    let resDiff = setRes / (setRes + setSup);
+    let supDiff = setSup / (setRes + setSup);
+    console.log(" CURRENT PRICE:", currentPrice, " *** TREND", trend, " SUP:", closestSupport, " RES:", closestResistance, " *** SUP DIF:", supDiff, " RES DIFF", resDiff)
+    if (trend < 0 && resDiff < 0.282 && resDiff > 0.172 && closestResistance > currentPrice) {
         console.log("SET SELL ORDER")
         console.log("SUPPORT:", closestSupport, "RESISTANCE:", closestResistance);
         console.log("RES/SUP:", resDiff);
         console.log("CLOSE:", closestSupport + 5);
         placeOrder("Sell", closestSupport + 5)
     }
-    if (trend1m > 0 && supDiff < 0.282 && supDiff > 0.172 && closestSupport < currentPrice) {
+    if (trend > 0 && supDiff < 0.282 && supDiff > 0.172 && closestSupport < currentPrice) {
         console.log("SET BUY ORDER")
         console.log("SUPPORT:", closestSupport, "RESISTANCE:", closestResistance);
         console.log("RES/SUP:", resDiff);
@@ -130,77 +139,89 @@ function checkSupRes(currentPrice, trend1m, sup1d, sup1h, sup5m, res1d, res1h, r
     }
 }
 
-
+// Check if latest db records are outdated
 function checkForUpdate(data, type) {
-    let parameters = null;
     let dateNow = new Date(Date.now());
-    let currentDate = dateNow.toISOString().split('T')[0];
-    let currentTime = dateNow.toISOString().split('T')[1];
     data.find(function (err, element) {
         if (err) return next(err);
-        let last = element.slice(-1)[0].timestamp;
-        let lastDate = last.toISOString().split('T')[0];
-        let lastTime = last.toISOString().split('T')[1];
-        console.log(currentDate, lastDate)
-        if (type == '1d') { 
-            if (lastDate != currentDate) {
-                var difference = new Date(currentDate) - new Date(lastDate);
-                console.log(difference)
-                parameters = { symbol: "XBTUSD", binSize: "1d", count: difference, reverse: true };
-                bitmex(get, tradeBucketedPath, data).then((result) => {});
+        let lastDate = element.slice(-1)[0].timestamp;
+        let timeDelta = dateNow - lastDate;
+        let diffDays = Math.floor(timeDelta / 86400000);
+        let diffHours = Math.floor(timeDelta / 3600000);
+        let diffMinutes = Math.round(timeDelta / 60000);
+        if (type == '1d') {
+            if (diffDays > 0) {
+                let parameters = { symbol: "XBTUSD", binSize: "1d", count: diffDays, reverse: true };
+                bitmex(get, tradeBucketedPath, parameters).then((result) => {
+                    var ohlcData1d = result.reverse().map(element => element = new ohlcData1dModel(element));
+                    ohlcData1d.forEach(element => { element.save() });
+                });
             };
         };
-        if (type == '1h') {  };
-        if (type == '5m') {  };
+        if (type == '1h') {
+            if (diffHours > 0) {
+                let parameters = { symbol: "XBTUSD", binSize: "1h", count: diffHours, reverse: true };
+                bitmex(get, tradeBucketedPath, parameters).then((result) => {
+                    var ohlcData1h = result.reverse().map(element => element = new ohlcData1hModel(element));
+                    ohlcData1h.forEach(element => { element.save() });
+                });
+            };
+        };
+        if (type == '5m') {
+            if (diffMinutes > 5) {
+                let parameters = { symbol: "XBTUSD", binSize: "5m", count: Math.floor(diffMinutes / 5), reverse: true };
+                bitmex(get, tradeBucketedPath, parameters).then((result) => {
+                    var ohlcData5m = result.reverse().map(element => element = new ohlcData5mModel(element));
+                    ohlcData5m.forEach(element => { element.save() });
+                });
+            };
+
+        };
     })
 }
-checkForUpdate(ohlcData1dModel, '1d');
-// checkCurrentStatus(4000);
 
-function checkCurrentStatus(currentPrice) {
-    // checkForUpdate(ohlcData1dModel, '1d');
-    // checkForUpdate(ohlcData1hModel, '1h');
-    // checkForUpdate(ohlcData5mModel, '5m');
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    let data = { symbol: "XBTUSD", binSize: "1d", count: 750, reverse: true };
+// Get ohlc data - if database is empty
+function getOhlcData() {
+    let data = "";
+    data = { symbol: "XBTUSD", binSize: "1d", count: 750, reverse: true };
     bitmex(get, tradeBucketedPath, data).then((result) => {
         var ohlcData1d = result.reverse().map(element => element = new ohlcData1dModel(element));
-        ohlcData1d.forEach(element => { element.save()});
-        var extremes1d = calcExtremes(ohlcData1d, "1day");
-        var support1d = groupSupres(extremes1d.min.map(item => item.min));
-        var resistance1d = groupSupres(extremes1d.max.map(item => item.max));
-        data = { symbol: "XBTUSD", binSize: "1h", count: 750, reverse: true };
-        bitmex(get, tradeBucketedPath, data).then((result) => {
-            var ohlcData1h = result.reverse().map(element => element = new ohlcData1hModel(element));
-            ohlcData1h.forEach(element => { element.save()});
-            var extremes1h = calcExtremes(ohlcData1h, "1hour");
-            var support1h = groupSupres(extremes1h.min.map(item => item.min));
-            var resistance1h = groupSupres(extremes1h.max.map(item => item.max));
-            data = { symbol: "XBTUSD", binSize: "5m", count: 750, reverse: true };
-            bitmex(get, tradeBucketedPath, data).then((result) => {
-                var ohlcData5m = result.reverse().map(element => element = new ohlcData5mModel(element));
-                ohlcData5m.forEach(element => { element.save()});
-                var extremes5m = calcExtremes(ohlcData5m, "5min");
-                var support5m = groupSupres(extremes5m.min.map(item => item.min));
-                var resistance5m = groupSupres(extremes5m.max.map(item => item.max));
-                data = { symbol: "XBTUSD", binSize: "1m", count: 750, reverse: true };
-                bitmex(get, tradeBucketedPath, data).then((result) => {
-                    var ohlcData1m = result.reverse().map(element => element = new ohlcData1mModel(element));
-                    var trend1m = checkTrend(ohlcData1m, 5);
-                    checkSupRes(currentPrice, trend1m, support1d, support1h, support5m, resistance1d, resistance1h, resistance5m);
-                });
-            });
-        })
+        ohlcData1d.forEach(element => { element.save() });
+    });
+    data = { symbol: "XBTUSD", binSize: "1h", count: 750, reverse: true };
+    bitmex(get, tradeBucketedPath, data).then((result) => {
+        var ohlcData1h = result.reverse().map(element => element = new ohlcData1hModel(element));
+        ohlcData1h.forEach(element => { element.save() });
+    });
+    bitmex(get, tradeBucketedPath, data).then((result) => {
+        var ohlcData5m = result.reverse().map(element => element = new ohlcData5mModel(element));
+        ohlcData5m.forEach(element => { element.save() });
+    });
+}
 
+function checkCurrentStatus(currentPrice) {
+    checkForUpdate(ohlcData1dModel, '1d');
+    checkForUpdate(ohlcData1hModel, '1h');
+    checkForUpdate(ohlcData5mModel, '5m');
+    var promises = [
+        ohlc1dquery = ohlcData1dModel.find().exec(),
+        ohlc1hquery = ohlcData1hModel.find().exec(),
+        ohlc5mquery = ohlcData5mModel.find().exec(),
+    ];
+    Promise.all(promises).then(function(results) {
+        let acc = [];
+        acc = acc.concat(results[0],results[1],results[2]);
+        let extremes = calcExtremes(acc);
+        let support = groupSupres(extremes.min.map(item => item.min));
+        let resistance = groupSupres(extremes.max.map(item => item.max));
+        data = { symbol: "XBTUSD", binSize: "1m", count: 20, reverse: true };
+        bitmex(get, tradeBucketedPath, data).then((result) => {
+            var ohlcData1m = result.reverse().map(element => element = new ohlcData1mModel(element));
+            var trend = checkTrend(ohlcData1m, 5);
+            checkSupRes(currentPrice, trend, support, resistance);
+        });
+    }).catch(function(err){
+        console.log(err);
     });
 }
 
@@ -288,7 +309,7 @@ client.on('connect', function (connection) {
                         })
                     }
                 } else {
-                    // checkCurrentStatus(JSON.parse(message.utf8Data).data[0].close);
+                    checkCurrentStatus(JSON.parse(message.utf8Data).data[0].close);
                 }
             })
         }
