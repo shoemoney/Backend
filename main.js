@@ -159,7 +159,8 @@ function checkForUpdate(data, type) {
             };
         };
         if (type == '1h') {
-            if (diffHours > 0) {
+            if (diffHours > 0 && diffHours < 1000) {
+                console.log(diffHours)
                 let parameters = { symbol: "XBTUSD", binSize: "1h", count: diffHours, reverse: true };
                 bitmex(get, tradeBucketedPath, parameters).then((result) => {
                     var ohlcData1h = result.reverse().map(element => element = new ohlcData1hModel(element));
@@ -168,7 +169,8 @@ function checkForUpdate(data, type) {
             };
         };
         if (type == '5m') {
-            if (diffMinutes > 5) {
+            if (diffMinutes > 5 && diffMinutes < 1000) {
+                console.log(diffMinutes)
                 let parameters = { symbol: "XBTUSD", binSize: "5m", count: Math.floor(diffMinutes / 5), reverse: true };
                 bitmex(get, tradeBucketedPath, parameters).then((result) => {
                     var ohlcData5m = result.reverse().map(element => element = new ohlcData5mModel(element));
@@ -211,6 +213,7 @@ function checkCurrentStatus(currentPrice) {
     Promise.all(promises).then(function(results) {
         let acc = [];
         acc = acc.concat(results[0],results[1],results[2]);
+        console.log(acc.length);
         let extremes = calcExtremes(acc);
         let support = groupSupres(extremes.min.map(item => item.min));
         let resistance = groupSupres(extremes.max.map(item => item.max));
