@@ -5,7 +5,10 @@ const app = express();
 let port = 3000;
 var WebSocketClient = require('websocket').client;
 var client = new WebSocketClient();
+
 const ohlcRoute = require('./app/routes/ohlcData.route'); 
+const userRoute = require('./app/routes/user.route'); 
+const authRoute = require('./app/routes/auth.route'); 
 
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/mydb', { useNewUrlParser: true, useCreateIndex: true, });
@@ -24,7 +27,9 @@ let ohlcData1dModel = ohlcModel.ohlcData1d;
 let ohlcData1hModel = ohlcModel.ohlcData1h;
 let ohlcData5mModel = ohlcModel.ohlcData5m;
 let ohlcData1mModel = ohlcModel.ohlcData1m;
-app.use('/ohlcData', ohlcRoute);
+app.use('/api/ohlcData', ohlcRoute);
+app.use('/api/users', userRoute);
+app.use('/api/login', authRoute);
 
 var stopOrderId = null;
 var lastOrder = null;
@@ -57,7 +62,6 @@ function checkTrend(data, period) {
         return 0;
     }
 }
-
 
 function calcExtremes(data) {
     const range = 15;
@@ -93,8 +97,6 @@ function calcExtremes(data) {
     return extremes
 }
 
-
-
 function groupSupres(data) {
     let result = data.sort().reduce((r, n) => {
         let lastSubArray = r[r.length - 1];
@@ -111,6 +113,7 @@ function groupSupres(data) {
         }
     }).filter(item => item.quantity > 1).sort((a, b) => a.price - b.price);
 }
+
 function checkSupRes(currentPrice, trend, support, resistance) {
     let sup = support.filter(element => (element.price) < currentPrice).sort((a, b) => b.price - a.price)[0];
     let res = resistance.filter(element => (element.price) > currentPrice).sort((a, b) => a.price - b.price)[0];

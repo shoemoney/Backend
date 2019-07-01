@@ -16,7 +16,7 @@ exports.details = function (req, res) {
 };
 
 exports.update = function (req, res) {
-    ohlcData.findByIdAndUpdate(req.params.id, { $set: req.body }, function (err, product) {
+    ohlcData.findByIdAndUpdate(req.params.id, { $set: req.body }, function (err, element) {
         if (err) return next(err);
         res.send('Data udpated.');
     });
@@ -43,6 +43,6 @@ exports.create = function (req, res) {
         if (err) {
             return next(err);
         }
-        res.send('Product Created successfully')
+        res.send('OHLC Created successfully')
     })
 };
