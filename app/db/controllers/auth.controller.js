@@ -10,7 +10,7 @@ exports.checkUser = function (req, res) {
                     let username = req.body.username;
                     jwt.sign({ username }, 'secretkey', { expiresIn: '10min' }, (err, token) => {
                         res.json(
-                            { token }
+                            { token, user: element }
                         )
                     })
                 } else {
