@@ -22,5 +22,11 @@
     "rxjs": "^6.3.3",
     "socket.io": "^2.2.0",
     "websocket": "^1.0.28"
+  },
+  "overrides": {
+    "form-data": "2.5.5"
+  },
+  "resolutions": {
+    "form-data": "2.5.5"
   }
 }
